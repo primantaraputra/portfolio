@@ -20,9 +20,9 @@
         <span class="topbar-badge">10 Slide • A4 Widescreen</span>
         <!-- Switcher Versi Realtime -->
         <div class="topbar-switcher">
-          <button id="btn-v3" class="switcher-btn active" onclick="switchVersion('v3')">🌿 Versi 3 (Clean Human / Alami)</button>
+          <button id="btn-v1" class="switcher-btn active" onclick="switchVersion('v1')">📄 Versi 1 (Awal / Klasik)</button>
+          <button id="btn-v3" class="switcher-btn" onclick="switchVersion('v3')">🌿 Versi 3 (Clean Studio)</button>
           <button id="btn-v2" class="switcher-btn" onclick="switchVersion('v2')">🏛️ Versi 2 (Editorial)</button>
-          <button id="btn-v1" class="switcher-btn" onclick="switchVersion('v1')">📄 Versi 1 (Awal / Klasik)</button>
         </div>
       </div>
       <div class="topbar-right">
@@ -47,7 +47,7 @@
     <!-- ========================================================
          SLIDE 1 (VERSI 3 - CLEAN HUMAN STUDIO): ALAMI, BERSIH, BEBAS CLICHE AI (AKTIF)
          ======================================================== -->
-    <article class="slide-page slide-cover-v3 version-v3" id="slide-1">
+    <article class="slide-page slide-cover-v3 version-v3" id="slide-1-v3" style="display: none;">
       <div class="v3-cover-topbar">
         <span>PORTOFOLIO MAHASISWA & PENGEMBANG SISTEM</span>
         <strong>DIAN WILDAN PRIMANTARA PUTRA • 2026</strong>
@@ -312,7 +312,7 @@
     <!-- ========================================================
          SLIDE 1 (VERSI 1 - AWAL / KLASIK - TERSEDIA SAAT TOGGLE V1)
          ======================================================== -->
-    <article class="slide-page slide-cover version-v1" id="slide-1-v1" style="display: none;">
+    <article class="slide-page slide-cover version-v1" id="slide-1">
       <div class="slide-inner">
         <div class="cover-layout">
           <div class="cover-content">
@@ -382,7 +382,7 @@
     <!-- ========================================================
          SLIDE 2 (VERSI 3 - CLEAN HUMAN STUDIO): SPREAD EDITORIAL RESUME BERSIH (AKTIF)
          ======================================================== -->
-    <article class="slide-page slide-overview-v3 version-v3" id="slide-2">
+    <article class="slide-page slide-overview-v3 version-v3" id="slide-2-v3" style="display: none;">
       <header class="v3-slide-header">
         <div>
           <span class="v3-section-kicker">RINGKASAN PROFIL & REKAM JEJAK</span>
@@ -744,7 +744,7 @@
     <!-- ========================================================
          SLIDE 2 (VERSI 1 - AWAL / KLASIK - TERSEDIA SAAT TOGGLE V1)
          ======================================================== -->
-    <article class="slide-page version-v1" id="slide-2-v1" style="display: none;">
+    <article class="slide-page version-v1" id="slide-2">
       <header class="slide-header">
         <div>
           <span class="slide-eyebrow">BACKGROUND & COMPETENCIES</span>
@@ -1553,12 +1553,12 @@
     document.addEventListener('DOMContentLoaded', () => {
       try {
         const saved = sessionStorage.getItem('portfolio_deck_version');
-        if (saved === 'v1') {
-          switchVersion('v1');
+        if (saved === 'v3') {
+          switchVersion('v3');
         } else if (saved === 'v2') {
           switchVersion('v2');
         } else {
-          switchVersion('v3');
+          switchVersion('v1');
         }
       } catch(e){}
     });

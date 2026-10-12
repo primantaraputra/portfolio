@@ -41,16 +41,30 @@ server.listen(0, '127.0.0.1', async () => {
   await page.goto(`http://127.0.0.1:${port}/print.html`, { waitUntil: 'networkidle0' });
   await page.evaluateHandle('document.fonts.ready');
 
-  // Screenshot slide 1 & 2 Versi 3 (Default aktif)
-  const slide1 = await page.$('#slide-1');
-  if (slide1) {
-    await slide1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v3.png') });
-    console.log('Slide 1 v3 screenshot saved');
+  // Screenshot slide 1 & 2 Versi 1 (Default aktif sekarang)
+  const slide1V1 = await page.$('#slide-1');
+  if (slide1V1) {
+    await slide1V1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v1.png') });
+    console.log('Slide 1 v1 screenshot saved');
   }
 
-  const slide2 = await page.$('#slide-2');
-  if (slide2) {
-    await slide2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v3.png') });
+  const slide2V1 = await page.$('#slide-2');
+  if (slide2V1) {
+    await slide2V1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v1.png') });
+    console.log('Slide 2 v1 screenshot saved');
+  }
+
+  // Switch to Versi 3 and take screenshot
+  await page.evaluate(() => switchVersion('v3'));
+  await page.waitForTimeout ? await page.waitForTimeout(400) : await new Promise(r => setTimeout(r, 400));
+  const slide1V3 = await page.$('#slide-1-v3');
+  if (slide1V3) {
+    await slide1V3.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v3.png') });
+    console.log('Slide 1 v3 screenshot saved');
+  }
+  const slide2V3 = await page.$('#slide-2-v3');
+  if (slide2V3) {
+    await slide2V3.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v3.png') });
     console.log('Slide 2 v3 screenshot saved');
   }
 
@@ -66,15 +80,6 @@ server.listen(0, '127.0.0.1', async () => {
   if (slide2V2) {
     await slide2V2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v2.png') });
     console.log('Slide 2 v2 screenshot saved');
-  }
-
-  // Screenshot slide 1 Versi 1
-  await page.goto(`http://127.0.0.1:${port}/print-v1-original.html`, { waitUntil: 'networkidle0' });
-  await page.evaluateHandle('document.fonts.ready');
-  const slide1V1 = await page.$('#slide-1');
-  if (slide1V1) {
-    await slide1V1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v1.png') });
-    console.log('Slide 1 v1 screenshot saved');
   }
 
   // Screenshot main web index.html

@@ -529,8 +529,8 @@ html, body {
 .overview-col-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 14px;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 .side-block {
