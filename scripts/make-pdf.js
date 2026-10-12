@@ -58,12 +58,18 @@ function createStaticServer() {
 }
 
 async function generatePDF() {
-  console.log('1. Memulai server lokal sementara...');
+  const isV1 = process.argv.includes('--v1');
+  const targetHtml = isV1 ? '/print-v1-original.html' : '/print.html';
+
+  console.log(`1. Memulai server lokal sementara (Target: ${targetHtml})...`);
   const { server, port } = await createStaticServer();
-  const printUrl = `http://127.0.0.1:${port}/print.html`;
+  const printUrl = `http://127.0.0.1:${port}${targetHtml}`;
 
   // Tentukan path output
-  const outputPath = path.resolve(rootDir, files.portfolio || 'assets/files/Portofolio.pdf');
+  const outputFileName = isV1
+    ? 'assets/files/Portofolio-DianWildanPrimantaraPutra-v1-original.pdf'
+    : (files.portfolio || 'assets/files/Portofolio-DianWildanPrimantaraPutra.pdf');
+  const outputPath = path.resolve(rootDir, outputFileName);
   const outputDir = path.dirname(outputPath);
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });

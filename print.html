@@ -18,6 +18,11 @@
       <div class="topbar-left">
         <span class="topbar-title">Portofolio</span>
         <span class="topbar-badge">10 Slide • A4 Widescreen</span>
+        <!-- Switcher Versi Realtime -->
+        <div class="topbar-switcher">
+          <button id="btn-v2" class="switcher-btn active" onclick="switchVersion('v2')">✨ Versi 2 (Human Editorial)</button>
+          <button id="btn-v1" class="switcher-btn" onclick="switchVersion('v1')">📄 Versi 1 (Awal / Klasik)</button>
+        </div>
       </div>
       <div class="topbar-right">
         <a href="index.html" class="topbar-btn topbar-btn-ghost">
@@ -39,13 +44,196 @@
   <main class="slide-deck">
     
     <!-- ========================================================
-         SLIDE 1: COVER / TITLE SLIDE (Keynote Style)
+         SLIDE 1 (VERSI 2 - HUMAN EDITORIAL): BESPOKE MONOGRAPH COVER
          ======================================================== -->
-    <article class="slide-page slide-cover" id="slide-1">
+    <article class="slide-page slide-cover-v2 version-v2" id="slide-1">
+      <!-- Top Masthead Bar: Archival publication header -->
+      <div class="editorial-masthead">
+        <div class="masthead-id">
+          <span class="masthead-badge">SELECTED WORKS // 2026</span>
+          <span class="masthead-title">DIAN WILDAN PRIMANTARA PUTRA</span>
+          <span class="masthead-sep">•</span>
+          <span class="masthead-univ">UNIVERSITAS TRUNOJOYO MADURA</span>
+        </div>
+        <div class="masthead-legal">
+          <span class="legal-seal">HAK CIPTA RESMI KEMENKUMHAM RI NO. 001059325</span>
+        </div>
+      </div>
+
       <div class="slide-inner">
-        
+        <div class="editorial-cover-grid">
+          
+          <!-- Sisi Kiri: Editorial Hero Typography + Statement + Curated Dossier Table of Contents -->
+          <div class="editorial-col-main">
+            <div>
+              <div class="editorial-kicker">
+                <span class="kicker-index">VOL. 01 / EXECUTIVE DOSSIER</span>
+                <span class="kicker-discipline">S1 SISTEM INFORMASI & SOFTWARE ENGINEERING</span>
+              </div>
+
+              <h1 class="editorial-hero-name">
+                Dian Wildan<br>
+                <span class="hero-name-light">Primantara Putra</span>
+              </h1>
+
+              <div class="editorial-thesis-box">
+                <p class="editorial-thesis-quote">
+                  “Menghubungkan rekayasa proses bisnis, arsitektur web modern, dan kepemimpinan tata kelola kelembagaan.”
+                </p>
+              </div>
+
+              <!-- 3 Pilar Unggulan Profil -->
+              <div class="editorial-pillars-row">
+                <div class="pillar-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  <span>Fullstack Web & Mobile Dev</span>
+                </div>
+                <div class="pillar-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Hak Cipta Kemenkumham RI</span>
+                </div>
+                <div class="pillar-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <span>Sekjen AMUNISI & Kadep PSDM</span>
+                </div>
+              </div>
+
+              <!-- Narasi Kuratorial Ringkas -->
+              <p class="editorial-bio-narrative">
+                Mahasiswa aktif Sistem Informasi Universitas Trunojoyo Madura dengan fokus pada rekayasa aplikasi web & mobile teruji, arsitektur basis data relasional, digitalisasi operasional UMKM berpayung Hak Cipta kenegaraan, serta kepemimpinan tata kelola kelembagaan mahasiswa.
+              </p>
+            </div>
+
+            <!-- The Executive Dossier Index (Daftar Isi & Struktur Portofolio) -->
+            <div class="editorial-index-ledger">
+              <div class="index-ledger-header">IKHTISAR STRUKTUR PORTOFOLIO (DOSSIER INDEX):</div>
+              <div class="index-ledger-grid">
+                <div class="index-ledger-item">
+                  <span class="index-num">01</span>
+                  <div class="index-info">
+                    <strong>Profil & Kapabilitas Teknis</strong>
+                    <span>Sekjen AMUNISI, Kadep PSDM, UTM (IPK 3,83) & Tech Matrix</span>
+                  </div>
+                </div>
+                <div class="index-ledger-item">
+                  <span class="index-num">02</span>
+                  <div class="index-info">
+                    <strong>Hak Cipta Kemenkumham RI</strong>
+                    <span>Program Komputer Laporan Keuangan UMKM Mie Aigo</span>
+                  </div>
+                </div>
+                <div class="index-ledger-item">
+                  <span class="index-num">03</span>
+                  <div class="index-info">
+                    <strong>Rekayasa Sistem & Produk</strong>
+                    <span>Next.js 16 POS, SINAU.in Flutter, CMS UI/UX, QA Testing</span>
+                  </div>
+                </div>
+                <div class="index-ledger-item">
+                  <span class="index-num">04</span>
+                  <div class="index-info">
+                    <strong>Penghargaan & Lampiran Resmi</strong>
+                    <span>Skor #1 PPK Ormawa, 2x Finalis FESMA, I2AC BEM FEB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Editorial Colophon Strip -->
+            <div class="editorial-contact-ledger">
+              <div class="contact-ledger-item">
+                <span class="ledger-label">EMAIL</span>
+                <span class="ledger-val">dianwildanp@gmail.com</span>
+              </div>
+              <div class="contact-ledger-item">
+                <span class="ledger-label">TELP / WA</span>
+                <span class="ledger-val">+62 877-1751-1477</span>
+              </div>
+              <div class="contact-ledger-item">
+                <span class="ledger-label">GITHUB</span>
+                <span class="ledger-val">github.com/primantaraputra</span>
+              </div>
+              <div class="contact-ledger-item">
+                <span class="ledger-label">DOMISILI</span>
+                <span class="ledger-val">Pamekasan, Madura</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sisi Kanan: Curated Portrait Card with Monogram + 4 Metric Blocks -->
+          <div class="editorial-col-side">
+            <!-- Bespoke Portrait Frame -->
+            <div class="curated-portrait-card">
+              <div class="portrait-photo-box">
+                <img src="assets/img/foto.jpg" alt="Dian Wildan Primantara Putra" class="curated-photo">
+                <div class="portrait-stamp-tag">
+                  <span class="stamp-monogram">DWP</span>
+                  <span class="stamp-verified">VERIFIED</span>
+                </div>
+              </div>
+              <div class="portrait-meta-block">
+                <div class="portrait-name">Dian Wildan Primantara Putra</div>
+                <div class="portrait-dept">Universitas Trunojoyo Madura • S1 Sistem Informasi</div>
+                <div class="portrait-coord">Lat: 7.159° S • Long: 113.479° E • Pamekasan, ID</div>
+              </div>
+            </div>
+
+            <!-- 4 Dossier Milestone Metric Blocks -->
+            <div class="editorial-metrics-grid">
+              <div class="dossier-stat-card">
+                <div class="stat-top">
+                  <span class="stat-num">3,83</span>
+                  <span class="stat-badge">KUMULATIF</span>
+                </div>
+                <div class="stat-desc">IPK S1 Sistem Informasi UTM</div>
+                <div class="stat-sub">Rekayasa Perangkat Lunak & Sistem Terdistribusi</div>
+              </div>
+
+              <div class="dossier-stat-card">
+                <div class="stat-top">
+                  <span class="stat-num">001059325</span>
+                  <span class="stat-badge">KEMENKUMHAM</span>
+                </div>
+                <div class="stat-desc">Hak Cipta Resmi Program Komputer</div>
+                <div class="stat-sub">Pencipta 1 Web Laporan Keuangan UMKM (50 Thn)</div>
+              </div>
+
+              <div class="dossier-stat-card">
+                <div class="stat-top">
+                  <span class="stat-num">SKOR #1</span>
+                  <span class="stat-badge">UTM 2026</span>
+                </div>
+                <div class="stat-desc">Poin Tertinggi PPK Ormawa Kampus</div>
+                <div class="stat-sub">Smart Salt Farm: Geoisolator Digital Desa Bunder</div>
+              </div>
+
+              <div class="dossier-stat-card">
+                <div class="stat-top">
+                  <span class="stat-num">2 KARYA</span>
+                  <span class="stat-badge">NASIONAL</span>
+                </div>
+                <div class="stat-desc">Finalis Lomba Essay FESMA 2026</div>
+                <div class="stat-sub">FORGUARD & SIAGA-TPS (Sentosa & UNRAM)</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio Teknis & Kepemimpinan</span>
+        <span>Slide 01 / 10 • Edisi Eksekutif</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 1 (VERSI 1 - AWAL / KLASIK - TERSEDIA SAAT TOGGLE V1)
+         ======================================================== -->
+    <article class="slide-page slide-cover version-v1" id="slide-1-v1" style="display: none;">
+      <div class="slide-inner">
         <div class="cover-layout">
-          <!-- Sisi Kiri: Judul Besar, Bio Ringkas & Highlight Metrics -->
           <div class="cover-content">
             <div class="cover-eyebrow">
               <span class="eyebrow-tag">PORTOFOLIO</span>
@@ -62,7 +250,6 @@
               Mahasiswa aktif Sistem Informasi di Universitas Trunojoyo Madura dengan dedikasi pada pengembangan aplikasi web & mobile, rekayasa proses bisnis, serta kepemimpinan organisasi teknologi.
             </p>
 
-            <!-- 4 Highlight Metrics / Pillars -->
             <div class="cover-metrics-row">
               <div class="metric-pill">
                 <span class="metric-val">3,83</span>
@@ -82,7 +269,6 @@
               </div>
             </div>
 
-            <!-- Strip Kontak Minimalis -->
             <div class="cover-contact-strip">
               <span>dianwildanp@gmail.com</span>
               <span class="dot-sep">•</span>
@@ -94,7 +280,6 @@
             </div>
           </div>
 
-          <!-- Sisi Kanan: Foto Profil Besar & Kartu Identitas Elegan -->
           <div class="cover-visual">
             <div class="cover-photo-frame">
               <img src="assets/img/foto.jpg" alt="Dian Wildan Primantara Putra" class="cover-photo">
@@ -105,7 +290,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <footer class="slide-footer">
@@ -115,9 +299,229 @@
     </article>
 
     <!-- ========================================================
-         SLIDE 2: LEADERSHIP, EXPERIENCE & TECHNICAL STACK
+         SLIDE 2 (VERSI 2 - HUMAN EDITORIAL): TRI-COLUMN ARCHITECTURAL DOSSIER
          ======================================================== -->
-    <article class="slide-page" id="slide-2">
+    <article class="slide-page slide-dossier-v2 version-v2" id="slide-2">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">DOSSIER 02 // REKAM JEJAK & MATRIKS KOMPETENSI</span>
+            <span class="cert-pill">GOVERNANCE • INNOVATION • ENGINEERING</span>
+          </div>
+          <h2 class="slide-title">Kepemimpinan Organisasi, Rekam Prestasi & Kapabilitas Rekayasa</h2>
+          <p class="slide-subtitle">Sintesis peran kepemimpinan strategis kelembagaan, pencapaian inovasi nasional, serta peta instrumen rekayasa perangkat lunak.</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">02</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="tri-dossier-grid">
+          
+          <!-- KOLOM 1: KEPEMIMPINAN ORGANISASI & TATA KELOLA -->
+          <div class="dossier-column">
+            <div class="dossier-col-header">
+              <span class="col-pill">01 // GOVERNANCE</span>
+              <h3 class="dossier-col-title">KEPEMIMPINAN ORGANISASI</h3>
+            </div>
+
+            <div class="dossier-cards-stack">
+              <!-- Entry 1: AMUNISI -->
+              <div class="dossier-entry-card entry-highlight">
+                <div class="entry-meta-top">
+                  <span class="entry-role">Sekretaris Jenderal</span>
+                  <span class="entry-period">Sekarang</span>
+                </div>
+                <div class="entry-institution">AMUNISI — Universitas Trunojoyo Madura</div>
+                <p class="entry-details">
+                  Memimpin tata kelola birokrasi legal resmi, tata persuratan kelembagaan, serta koordinasi strategis lintas 5 divisi kerja organisasi.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Mengoordinasikan kepatuhan administrasi & komunikasi eksternal</span>
+                </div>
+              </div>
+
+              <!-- Entry 2: HIMASI -->
+              <div class="dossier-entry-card">
+                <div class="entry-meta-top">
+                  <span class="entry-role">Kepala Departemen PSDM</span>
+                  <span class="entry-period">Sekarang</span>
+                </div>
+                <div class="entry-institution">HIMASI — Himpunan Mahasiswa SI UTM</div>
+                <p class="entry-details">
+                  Merancang kurikulum kaderisasi mahasiswa baru jurusan SI, workshop keilmuan teknologi, serta monitoring performa 40+ fungsionaris.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Membina regenerasi pengurus & forum upgrading skill teknis</span>
+                </div>
+              </div>
+
+              <!-- Entry 3: Rekam Jejak Kolaborasi -->
+              <div class="dossier-entry-card">
+                <div class="entry-meta-top">
+                  <span class="entry-role">Manajemen Acara & Kolaborasi</span>
+                  <span class="entry-period">2024 – 2026</span>
+                </div>
+                <div class="entry-institution">Inisiatif Kelembagaan Mahasiswa SI UTM</div>
+                <p class="entry-details">
+                  Berpengalaman memimpin tim kepanitiaan seminar, pelatihan komputasi, serta sinkronisasi kemitraan prodi dengan ormawa kampus.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Fokus pada efisiensi operasional & akuntabilitas tim</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KOLOM 2: PENGAKUAN INOVASI & PRESTASI NASIONAL -->
+          <div class="dossier-column">
+            <div class="dossier-col-header">
+              <span class="col-pill">02 // HONORS</span>
+              <h3 class="dossier-col-title">PRESTASI & HAK CIPTA</h3>
+            </div>
+
+            <div class="dossier-cards-stack">
+              <!-- Hak Cipta Kemenkumham RI -->
+              <div class="dossier-entry-card entry-legal">
+                <div class="entry-meta-top">
+                  <span class="entry-role">Hak Cipta Kemenkumham RI</span>
+                  <span class="entry-tag-legal">NO. 001059325</span>
+                </div>
+                <div class="entry-institution">Kementerian Hukum RI • Pemegang: UTM</div>
+                <p class="entry-details">
+                  Pencipta 1 Program Komputer Website Laporan Keuangan UMKM Mie Aigo Kamal bersama UTM & dosen pembimbing. Dilindungi hak cipta 50 tahun.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Permohonan EC002025219065 • Terdaftar 9 Des 2025</span>
+                </div>
+              </div>
+
+              <!-- PPK Ormawa -->
+              <div class="dossier-entry-card">
+                <div class="entry-meta-top">
+                  <span class="entry-role">PPK Ormawa (Poin #1 Kampus)</span>
+                  <span class="entry-period">2026</span>
+                </div>
+                <div class="entry-institution">Smart Salt Farm — Desa Bunder, Pamekasan</div>
+                <p class="entry-details">
+                  Skor tertinggi se-UTM. Rekayasa model desa garam berkelanjutan menggunakan integrasi geoisolator adaptif iklim digital.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Peringkat 1 seleksi proposal universitas menuju Dikti</span>
+                </div>
+              </div>
+
+              <!-- FESMA & I2AC -->
+              <div class="dossier-entry-card">
+                <div class="entry-meta-top">
+                  <span class="entry-role">Finalis Nasional FESMA & I2AC</span>
+                  <span class="entry-period">2026</span>
+                </div>
+                <div class="entry-institution">Sentosa Foundation, UNRAM & FEB UTM</div>
+                <p class="entry-details">
+                  Finalis nasional 2 karya inovasi (FORGUARD & SIAGA-TPS) serta peraih penghargaan Honorable Mention 1 Lomba Business Plan I2AC UTM 2026.
+                </p>
+                <div class="entry-subpoint">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Inovasi IoT pemantauan lingkungan & model bisnis digital</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KOLOM 3: PENDIDIKAN & MATRIKS KAPABILITAS REKAYASA -->
+          <div class="dossier-column">
+            <div class="dossier-col-header">
+              <span class="col-pill">03 // ENGINEERING</span>
+              <h3 class="dossier-col-title">PENDIDIKAN & TECH MATRIX</h3>
+            </div>
+
+            <div class="dossier-cards-stack">
+              <!-- Pendidikan & Praktik Industri Block -->
+              <div class="pedigree-panel">
+                <div class="pedigree-item">
+                  <div class="pedigree-logo">
+                    <img src="assets/img/logo-utm.png" alt="UTM">
+                  </div>
+                  <div class="pedigree-text">
+                    <strong class="pedigree-title">Universitas Trunojoyo Madura</strong>
+                    <div class="pedigree-sub">S1 Sistem Informasi • <strong>IPK 3,83 / 4,00</strong></div>
+                    <div class="pedigree-note">Fokus: Software Engineering & Arsitektur Data</div>
+                  </div>
+                </div>
+
+                <div class="pedigree-item">
+                  <div class="pedigree-logo">
+                    <img src="assets/img/logo-smk.png" alt="SMK">
+                  </div>
+                  <div class="pedigree-text">
+                    <strong class="pedigree-title">SMK Negeri 2 Pamekasan</strong>
+                    <div class="pedigree-sub">Teknik Komputer & Jaringan (2021–2024)</div>
+                    <div class="pedigree-note">Siswa Lulusan Terbaik Bidang Akademik</div>
+                  </div>
+                </div>
+
+                <!-- Praktik Industri Telkom Akses -->
+                <div class="pedigree-industry-item">
+                  <div class="industry-label">Praktik Industri & QA Testing:</div>
+                  <div class="industry-val">PT. Telkom Akses — Peserta Terbaik PKL TKJ</div>
+                  <div class="industry-desc">Pemeliharaan fiber optik backbone & praktisi White Box (Basis Path) / Black Box QA Testing.</div>
+                </div>
+              </div>
+
+              <!-- Structured Tech Matrix -->
+              <div class="tech-matrix-panel">
+                <div class="matrix-row">
+                  <span class="matrix-cat">Web / Fullstack</span>
+                  <div class="matrix-tags">
+                    <span>Next.js 16</span>
+                    <span>TypeScript</span>
+                    <span>PHP</span>
+                    <span>Tailwind</span>
+                    <span>REST API</span>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-cat">Mobile & Basis Data</span>
+                  <div class="matrix-tags">
+                    <span>Flutter & Dart</span>
+                    <span>MySQL</span>
+                    <span>Supabase (PostgreSQL)</span>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-cat">Quality Assurance & Tools</span>
+                  <div class="matrix-tags">
+                    <span>White Box Testing</span>
+                    <span>Black Box</span>
+                    <span>Git / GitHub</span>
+                    <span>Figma UI/UX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio Teknis & Kepemimpinan</span>
+        <span>Slide 02 / 10 • Edisi Eksekutif</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 2 (VERSI 1 - AWAL / KLASIK - TERSEDIA SAAT TOGGLE V1)
+         ======================================================== -->
+    <article class="slide-page version-v1" id="slide-2-v1" style="display: none;">
       <header class="slide-header">
         <div>
           <span class="slide-eyebrow">BACKGROUND & COMPETENCIES</span>
@@ -885,5 +1289,38 @@
     </article>
 
   </main>
+
+  <!-- Script Interaktif Switcher Versi (Untuk Pratinjau di Browser) -->
+  <script>
+    function switchVersion(ver) {
+      const v2Elements = document.querySelectorAll('.version-v2');
+      const v1Elements = document.querySelectorAll('.version-v1');
+      const btnV2 = document.getElementById('btn-v2');
+      const btnV1 = document.getElementById('btn-v1');
+
+      if (ver === 'v1') {
+        v2Elements.forEach(el => el.style.display = 'none');
+        v1Elements.forEach(el => el.style.display = 'flex');
+        if (btnV1) btnV1.classList.add('active');
+        if (btnV2) btnV2.classList.remove('active');
+        try { sessionStorage.setItem('portfolio_deck_version', 'v1'); } catch(e){}
+      } else {
+        v1Elements.forEach(el => el.style.display = 'none');
+        v2Elements.forEach(el => el.style.display = 'flex');
+        if (btnV2) btnV2.classList.add('active');
+        if (btnV1) btnV1.classList.remove('active');
+        try { sessionStorage.setItem('portfolio_deck_version', 'v2'); } catch(e){}
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        const saved = sessionStorage.getItem('portfolio_deck_version');
+        if (saved === 'v1') {
+          switchVersion('v1');
+        }
+      } catch(e){}
+    });
+  </script>
 </body>
 </html>

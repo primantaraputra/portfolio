@@ -58,20 +58,36 @@ Buka browser di `http://localhost:8080`.
 
 ---
 
-## 4. Cara Membuat Ulang File PDF Portofolio
+## 4. Cara Membuat Ulang File PDF Portofolio & Pilihan Layout
 
-Jalankan perintah berikut di terminal:
+Proyek ini menyediakan **2 versi layout dokumen portofolio download (A4 Landscape)**:
+- **Versi 2 (Human Editorial Monograph — Aktif Secara Default)**:
+  - Struktur pembuka (*Cover & Slide 2*) yang dirancang khusus dengan gaya editorial human-crafted (editorial masthead, executive dossier index/daftar isi terstruktur, kartu kuratorial profil dengan koordinat & stempel monogram DWP, serta tata letak 3-kolom arsitektural untuk kepemimpinan, prestasi nasional, dan matriks keahlian).
+  - Tampilan jauh lebih berbobot, otentik, dan tidak tampak seperti template AI generik.
+- **Versi 1 (Awal / Klasik)**:
+  - Struktur asli 2-kolom sebelumnya tetap disimpan 100% utuh di `print-v1-original.html` dan dapat dialihkan kapan saja.
 
+### Cara Generate PDF:
+
+**Untuk Versi 2 (Human Editorial):**
 ```bash
 npm run build:pdf
 ```
+*Menghasilkan file:* `assets/files/Portofolio-DianWildanPrimantaraPutra.pdf`
 
-Skrip ini secara otomatis akan:
-1. Membuka `print.html` menggunakan browser headless (Puppeteer).
-2. Memastikan font dan layout cetak termuat sempurna.
-3. Menyimpan hasil cetak A4 beresolusi tinggi ke `assets/files/Portofolio-DianWildanPrimantaraPutra.pdf`.
+**Untuk Versi 1 (Original / Klasik):**
+```bash
+npm run build:pdf:v1
+```
+*Menghasilkan file:* `assets/files/Portofolio-DianWildanPrimantaraPutra-v1-original.pdf`
 
-*Catatan:* Pengunjung juga dapat mengklik tombol **Cetak / Simpan PDF** pada `print.html` melalui dialog cetak browser (`Ctrl+P` / `Cmd+P`).
+### Cara Beralih Antar Versi di Browser:
+1. Jalankan `npm run serve` atau server lokal.
+2. Buka `print.html` di browser.
+3. Di floating topbar bagian atas terdapat tombol switcher:
+   - Klik **✨ Versi 2 (Human Editorial)** untuk melihat desain baru.
+   - Klik **📄 Versi 1 (Awal / Klasik)** untuk langsung beralih ke desain lama secara realtime.
+4. Jika ingin kembali permanen ke versi awal kapan saja, Anda cukup menyalin file `print-v1-original.html` menjadi `print.html`, atau menggunakan git commit awal.
 
 ---
 

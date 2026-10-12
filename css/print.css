@@ -142,6 +142,45 @@ html, body {
   background-color: var(--lily-white-soft);
 }
 
+/* Switcher Tombol Preview Versi 1 vs Versi 2 */
+.topbar-switcher {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 3px;
+  border-radius: 8px;
+  gap: 4px;
+  margin-left: 10px;
+  border: 1px solid rgba(226, 226, 218, 0.18);
+}
+
+.switcher-btn {
+  background: transparent;
+  color: var(--lily-white);
+  border: none;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.switcher-btn:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.switcher-btn.active {
+  background-color: var(--foxglove);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
 /* ==========================================================================
    Slide Deck Container (Preview Layar)
    ========================================================================== */
@@ -279,7 +318,682 @@ html, body {
 }
 
 /* ==========================================================================
-   SLIDE 1: COVER SLIDE
+   SLIDE 1 (VERSI 2 - HUMAN EDITORIAL): BESPOKE MONOGRAPH COVER
+   ========================================================================== */
+.slide-cover-v2 {
+  padding: 10mm 18mm 8mm 18mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.editorial-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid var(--slide-border);
+  margin-bottom: 7px;
+  font-size: 7.2pt;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.masthead-id {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.masthead-badge {
+  background-color: var(--night-sky);
+  color: var(--lily-white);
+  font-weight: 800;
+  font-size: 6.5pt;
+  padding: 2px 7px;
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+}
+
+.masthead-title {
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: 0.02em;
+}
+
+.masthead-sep {
+  color: var(--foxglove);
+  font-weight: bold;
+}
+
+.masthead-univ {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.legal-seal {
+  background-color: var(--foxglove-light);
+  color: var(--foxglove-dark);
+  font-weight: 700;
+  font-size: 6.6pt;
+  padding: 2.5px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(185, 131, 145, 0.35);
+  letter-spacing: 0.05em;
+}
+
+.editorial-cover-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 22px;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+.editorial-col-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 7px;
+  min-height: 0;
+}
+
+.editorial-bio-narrative {
+  font-size: 7.5pt;
+  line-height: 1.45;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.editorial-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+
+.kicker-index {
+  font-size: 7.2pt;
+  font-weight: 800;
+  color: var(--foxglove-dark);
+  letter-spacing: 0.1em;
+}
+
+.kicker-discipline {
+  font-size: 7pt;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.editorial-hero-name {
+  font-size: 26pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 7px;
+}
+
+.hero-name-light {
+  font-weight: 700;
+  color: var(--foxglove-dark);
+}
+
+.editorial-thesis-box {
+  background: linear-gradient(90deg, var(--lily-white-soft) 0%, rgba(244, 244, 238, 0.4) 100%);
+  border-left: 3.5px solid var(--foxglove);
+  padding: 6px 12px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 8px;
+}
+
+.editorial-thesis-quote {
+  font-size: 8.3pt;
+  color: var(--text-main);
+  line-height: 1.42;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* 3 Pilar Unggulan */
+.editorial-pillars-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.pillar-chip {
+  background-color: #ffffff;
+  border: 1px solid var(--slide-border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 6.8pt;
+  font-weight: 600;
+  color: var(--night-sky);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pillar-chip svg {
+  color: var(--foxglove);
+  flex-shrink: 0;
+}
+
+/* Dossier Index Ledger (Daftar Isi) */
+.editorial-index-ledger {
+  background-color: #fafaf8;
+  border: 1px solid var(--slide-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+}
+
+.index-ledger-header {
+  font-size: 6.8pt;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--night-sky);
+  margin-bottom: 6px;
+  border-bottom: 1px dashed var(--slide-border);
+  padding-bottom: 3px;
+}
+
+.index-ledger-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 12px;
+}
+
+.index-ledger-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.index-num {
+  font-size: 8pt;
+  font-weight: 800;
+  color: var(--foxglove);
+  line-height: 1.2;
+}
+
+.index-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-info strong {
+  font-size: 7.3pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  line-height: 1.2;
+}
+
+.index-info span {
+  font-size: 6.5pt;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+.editorial-contact-ledger {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--slide-border);
+}
+
+.contact-ledger-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.ledger-label {
+  font-size: 5.8pt;
+  font-weight: 800;
+  color: var(--foxglove-dark);
+  letter-spacing: 0.06em;
+}
+
+.ledger-val {
+  font-size: 6.8pt;
+  font-weight: 600;
+  color: var(--night-sky);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sisi Kanan Cover v2 */
+.editorial-col-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 0;
+}
+
+.curated-portrait-card {
+  background-color: var(--lily-white-soft);
+  border: 1.5px solid var(--slide-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.portrait-photo-box {
+  position: relative;
+  width: 44mm;
+  height: 55mm;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid var(--foxglove);
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.curated-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portrait-stamp-tag {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background-color: rgba(42, 42, 53, 0.88);
+  backdrop-filter: blur(4px);
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stamp-monogram {
+  font-size: 6pt;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.stamp-verified {
+  font-size: 5.2pt;
+  font-weight: 700;
+  color: var(--foxglove);
+  letter-spacing: 0.08em;
+}
+
+.portrait-meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.portrait-name {
+  font-size: 9.5pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  line-height: 1.2;
+}
+
+.portrait-dept {
+  font-size: 7.4pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+}
+
+.portrait-coord {
+  font-size: 6.4pt;
+  font-weight: 500;
+  color: var(--text-muted);
+  font-family: monospace;
+  margin-top: 2px;
+}
+
+.editorial-metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.dossier-stat-card {
+  background-color: #ffffff;
+  border: 1px solid var(--slide-border);
+  border-radius: 6px;
+  padding: 8px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  border-top: 2.5px solid var(--night-sky);
+}
+
+.dossier-stat-card:nth-child(2) {
+  border-top-color: var(--foxglove);
+}
+
+.dossier-stat-card:nth-child(3) {
+  border-top-color: var(--foxglove-dark);
+}
+
+.dossier-stat-card:nth-child(4) {
+  border-top-color: #383846;
+}
+
+.stat-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.stat-num {
+  font-size: 13pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.stat-badge {
+  font-size: 5.8pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--foxglove-dark);
+  background-color: var(--foxglove-light);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+.stat-desc {
+  font-size: 7.1pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  line-height: 1.25;
+}
+
+.stat-sub {
+  font-size: 6.4pt;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ==========================================================================
+   SLIDE 2 (VERSI 2 - HUMAN EDITORIAL): TRI-COLUMN ARCHITECTURAL DOSSIER
+   ========================================================================== */
+.slide-dossier-v2 .tri-dossier-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1.05fr 0.9fr;
+  gap: 15px;
+  height: 100%;
+  align-items: stretch;
+}
+
+.dossier-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dossier-col-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid var(--slide-border);
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+
+.col-pill {
+  font-size: 6.2pt;
+  font-weight: 800;
+  color: var(--foxglove-dark);
+  letter-spacing: 0.08em;
+  background-color: var(--foxglove-light);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+.dossier-col-title {
+  font-size: 7.8pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: 0.05em;
+}
+
+.dossier-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.dossier-entry-card {
+  background-color: #fafaf8;
+  border: 1px solid var(--slide-border);
+  border-radius: 5px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.entry-highlight {
+  border-left: 3px solid var(--foxglove);
+  background-color: #ffffff;
+}
+
+.entry-legal {
+  border-left: 3px solid var(--night-sky);
+  background-color: #ffffff;
+}
+
+.entry-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 1px;
+}
+
+.entry-role {
+  font-size: 8pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  line-height: 1.2;
+}
+
+.entry-period {
+  font-size: 6.3pt;
+  font-weight: 700;
+  color: var(--foxglove-dark);
+  background-color: var(--foxglove-light);
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.entry-tag-legal {
+  font-size: 6pt;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: var(--night-sky);
+  padding: 1.5px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.entry-institution {
+  font-size: 7.1pt;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.entry-details {
+  font-size: 7pt;
+  line-height: 1.38;
+  color: var(--text-subtle);
+}
+
+.entry-subpoint {
+  font-size: 6.6pt;
+  color: var(--night-sky);
+  font-weight: 600;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.entry-subpoint svg {
+  color: var(--foxglove);
+  flex-shrink: 0;
+}
+
+/* Kolom 3: Pedigree & Tech Matrix */
+.pedigree-panel {
+  background-color: #ffffff;
+  border: 1px solid var(--slide-border);
+  border-radius: 5px;
+  padding: 7px 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.pedigree-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pedigree-logo {
+  width: 26px;
+  height: 26px;
+  background-color: var(--lily-white-soft);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 2px;
+  border: 1px solid var(--slide-border);
+}
+
+.pedigree-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pedigree-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.pedigree-title {
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  line-height: 1.15;
+}
+
+.pedigree-sub {
+  font-size: 6.8pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+  margin-top: 1px;
+}
+
+.pedigree-note {
+  font-size: 6.3pt;
+  color: var(--text-muted);
+}
+
+.pedigree-industry-item {
+  border-top: 1px dashed var(--slide-border);
+  padding-top: 5px;
+  margin-top: 2px;
+}
+
+.industry-label {
+  font-size: 6.2pt;
+  font-weight: 800;
+  color: var(--foxglove-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.industry-val {
+  font-size: 7pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  margin-top: 1px;
+}
+
+.industry-desc {
+  font-size: 6.4pt;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.tech-matrix-panel {
+  background-color: var(--lily-white-soft);
+  border: 1px solid var(--slide-border);
+  border-radius: 5px;
+  padding: 7px 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.matrix-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+.matrix-cat {
+  font-size: 6.3pt;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--night-sky);
+  text-transform: uppercase;
+}
+
+.matrix-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.matrix-tags span {
+  font-size: 6.4pt;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: var(--night-sky);
+  border: 1px solid rgba(42, 42, 53, 0.12);
+  padding: 1.5px 5.5px;
+  border-radius: 3px;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   SLIDE 1: COVER SLIDE (VERSI 1 - ORIGINAL KLASIK)
    ========================================================================== */
 .slide-cover {
   padding: 16mm 20mm 12mm 20mm;
@@ -865,6 +1579,10 @@ html, body {
 
   .slide-cover {
     padding: 14mm 18mm 10mm 18mm !important;
+  }
+
+  .slide-cover-v2 {
+    padding: 10mm 16mm 8mm 16mm !important;
   }
 
   .slide-page:last-child {

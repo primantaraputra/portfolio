@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build:pdf": "node scripts/make-pdf.js",
+    "build:pdf:v1": "node scripts/make-pdf.js --v1",
     "serve": "npx serve ."
   },
   "keywords": [
