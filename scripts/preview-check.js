@@ -41,19 +41,47 @@ server.listen(0, '127.0.0.1', async () => {
   await page.goto(`http://127.0.0.1:${port}/print.html`, { waitUntil: 'networkidle0' });
   await page.evaluateHandle('document.fonts.ready');
 
-  // Screenshot slide 1
+  // Screenshot slide 1 & 2 Versi 3 (Default aktif)
   const slide1 = await page.$('#slide-1');
   if (slide1) {
-    await slide1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v2.png') });
-    console.log('Slide 1 screenshot saved');
+    await slide1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v3.png') });
+    console.log('Slide 1 v3 screenshot saved');
   }
 
-  // Screenshot slide 2
   const slide2 = await page.$('#slide-2');
   if (slide2) {
-    await slide2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v2.png') });
-    console.log('Slide 2 screenshot saved');
+    await slide2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v3.png') });
+    console.log('Slide 2 v3 screenshot saved');
   }
+
+  // Switch to Versi 2 and take screenshot
+  await page.evaluate(() => switchVersion('v2'));
+  await page.waitForTimeout ? await page.waitForTimeout(400) : await new Promise(r => setTimeout(r, 400));
+  const slide1V2 = await page.$('#slide-1-v2');
+  if (slide1V2) {
+    await slide1V2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v2.png') });
+    console.log('Slide 1 v2 screenshot saved');
+  }
+  const slide2V2 = await page.$('#slide-2-v2');
+  if (slide2V2) {
+    await slide2V2.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide2-v2.png') });
+    console.log('Slide 2 v2 screenshot saved');
+  }
+
+  // Screenshot slide 1 Versi 1
+  await page.goto(`http://127.0.0.1:${port}/print-v1-original.html`, { waitUntil: 'networkidle0' });
+  await page.evaluateHandle('document.fonts.ready');
+  const slide1V1 = await page.$('#slide-1');
+  if (slide1V1) {
+    await slide1V1.screenshot({ path: path.join(rootDir, 'assets/img/preview-slide1-v1.png') });
+    console.log('Slide 1 v1 screenshot saved');
+  }
+
+  // Screenshot main web index.html
+  await page.goto(`http://127.0.0.1:${port}/index.html`, { waitUntil: 'networkidle0' });
+  await page.evaluateHandle('document.fonts.ready');
+  await page.screenshot({ path: path.join(rootDir, 'assets/img/preview-web-index.png'), clip: { x: 0, y: 0, width: 1400, height: 900 } });
+  console.log('Web index screenshot saved');
 
   await browser.close();
   server.close();

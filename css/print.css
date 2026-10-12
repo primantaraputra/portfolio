@@ -318,6 +318,317 @@ html, body {
 }
 
 /* ==========================================================================
+   VERSI 3: CLEAN HUMAN STUDIO EDITORIAL (NO AI CLICHES, NATURAL & AUTHENTIC)
+   ========================================================================== */
+.slide-cover-v3 {
+  padding: 11mm 18mm 9mm 18mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.v3-cover-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid var(--slide-border);
+  margin-bottom: 10px;
+  font-size: 7.5pt;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.v3-cover-topbar strong {
+  color: var(--night-sky);
+  letter-spacing: 0.02em;
+}
+
+.v3-cover-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 28px;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+.v3-cover-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 0;
+}
+
+.v3-hero-name {
+  font-size: 29pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin-bottom: 5px;
+}
+
+.v3-hero-role {
+  font-size: 9.8pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+  margin-bottom: 10px;
+}
+
+.v3-hero-bio {
+  font-size: 8.5pt;
+  line-height: 1.52;
+  color: #383844;
+  margin-bottom: 12px;
+  max-width: 96%;
+}
+
+.v3-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.v3-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(226, 226, 218, 0.7);
+}
+
+.v3-highlight-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.v3-hl-label {
+  font-size: 7.2pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: 0.04em;
+  min-width: 65px;
+  padding-top: 1px;
+}
+
+.v3-hl-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.v3-hl-text strong {
+  font-size: 7.8pt;
+  font-weight: 700;
+  color: var(--night-sky);
+}
+
+.v3-hl-text span {
+  font-size: 7.1pt;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.v3-contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--slide-border);
+  font-size: 7.6pt;
+  color: var(--night-sky);
+  font-weight: 600;
+}
+
+/* Sisi Kanan Cover v3 */
+.v3-cover-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.v3-photo-card {
+  background-color: #ffffff;
+  border: 1px solid var(--slide-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.v3-photo-img {
+  width: 100%;
+  height: 96mm;
+  object-fit: cover;
+  display: block;
+}
+
+.v3-photo-info {
+  padding: 10px 14px;
+  background-color: #fafaf8;
+  border-top: 1px solid var(--slide-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.v3-photo-info strong {
+  font-size: 8.8pt;
+  font-weight: 800;
+  color: var(--night-sky);
+}
+
+.v3-photo-info span {
+  font-size: 7.4pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+}
+
+.v3-photo-info small {
+  font-size: 6.8pt;
+  color: var(--text-muted);
+}
+
+/* Slide 2 Versi 3: InDesign / Figma Editorial Spread */
+.slide-overview-v3 {
+  padding: 11mm 18mm 9mm 18mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.v3-slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid var(--night-sky);
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.v3-section-kicker {
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: var(--foxglove-dark);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.v3-section-title {
+  font-size: 19pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.v3-slide-page-badge {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.v3-three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr 1fr;
+  gap: 22px;
+  flex: 1;
+  align-items: stretch;
+  min-height: 0;
+}
+
+.v3-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.v3-col-heading {
+  font-size: 8.2pt;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--night-sky);
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--slide-border);
+}
+
+.v3-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.v3-entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.v3-entry-title {
+  font-size: 8.2pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  line-height: 1.25;
+}
+
+.v3-entry-date {
+  font-size: 6.8pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+  white-space: nowrap;
+}
+
+.v3-entry-org {
+  font-size: 7.3pt;
+  font-weight: 600;
+  color: #555562;
+}
+
+.v3-entry-desc {
+  font-size: 7.1pt;
+  line-height: 1.42;
+  color: var(--text-subtle);
+  margin-top: 1px;
+}
+
+.v3-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 3px;
+}
+
+.v3-skill-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.v3-skill-row strong {
+  font-size: 7.3pt;
+  font-weight: 700;
+  color: var(--night-sky);
+}
+
+.v3-skill-row span {
+  font-size: 7pt;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
    SLIDE 1 (VERSI 2 - HUMAN EDITORIAL): BESPOKE MONOGRAPH COVER
    ========================================================================== */
 .slide-cover-v2 {
@@ -1583,6 +1894,11 @@ html, body {
 
   .slide-cover-v2 {
     padding: 10mm 16mm 8mm 16mm !important;
+  }
+
+  .slide-cover-v3,
+  .slide-overview-v3 {
+    padding: 11mm 16mm 9mm 16mm !important;
   }
 
   .slide-page:last-child {

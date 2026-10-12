@@ -20,7 +20,8 @@
         <span class="topbar-badge">10 Slide • A4 Widescreen</span>
         <!-- Switcher Versi Realtime -->
         <div class="topbar-switcher">
-          <button id="btn-v2" class="switcher-btn active" onclick="switchVersion('v2')">✨ Versi 2 (Human Editorial)</button>
+          <button id="btn-v3" class="switcher-btn active" onclick="switchVersion('v3')">🌿 Versi 3 (Clean Human / Alami)</button>
+          <button id="btn-v2" class="switcher-btn" onclick="switchVersion('v2')">🏛️ Versi 2 (Editorial)</button>
           <button id="btn-v1" class="switcher-btn" onclick="switchVersion('v1')">📄 Versi 1 (Awal / Klasik)</button>
         </div>
       </div>
@@ -44,9 +45,89 @@
   <main class="slide-deck">
     
     <!-- ========================================================
-         SLIDE 1 (VERSI 2 - HUMAN EDITORIAL): BESPOKE MONOGRAPH COVER
+         SLIDE 1 (VERSI 3 - CLEAN HUMAN STUDIO): ALAMI, BERSIH, BEBAS CLICHE AI (AKTIF)
          ======================================================== -->
-    <article class="slide-page slide-cover-v2 version-v2" id="slide-1">
+    <article class="slide-page slide-cover-v3 version-v3" id="slide-1">
+      <div class="v3-cover-topbar">
+        <span>PORTOFOLIO MAHASISWA & PENGEMBANG SISTEM</span>
+        <strong>DIAN WILDAN PRIMANTARA PUTRA • 2026</strong>
+      </div>
+
+      <div class="slide-inner">
+        <div class="v3-cover-grid">
+          
+          <!-- Sisi Kiri: Teks Manusiawi, Ringkas, Padat Prestasi Nyata -->
+          <div class="v3-cover-left">
+            <div>
+              <h1 class="v3-hero-name">Dian Wildan<br>Primantara Putra</h1>
+              <div class="v3-hero-role">Mahasiswa Sistem Informasi • Web & Mobile Developer</div>
+              
+              <p class="v3-hero-bio">
+                Saya Dian Wildan, mahasiswa aktif Sistem Informasi di Universitas Trunojoyo Madura. Berfokus pada pengembangan aplikasi web (Next.js, PHP) dan mobile (Flutter) yang memecahkan masalah operasional nyata. Memegang Hak Cipta resmi Kemenkumham RI untuk sistem akuntansi UMKM, peraih skor proposal tertinggi PPK Ormawa se-kampus UTM, serta aktif memimpin tata kelola organisasi sebagai Sekretaris Jenderal AMUNISI dan Kepala Departemen PSDM HIMASI.
+              </p>
+
+              <!-- 3 Sorotan Fakta Kunci (List Bersih Bergaris, Bukan Dashboard Angka AI) -->
+              <div class="v3-highlights-list">
+                <div class="v3-highlight-item">
+                  <span class="v3-hl-label">AKADEMIK</span>
+                  <div class="v3-hl-text">
+                    <strong>S1 Sistem Informasi — Universitas Trunojoyo Madura (IPK 3,83 / 4,00)</strong>
+                    <span>Konsentrasi Rekayasa Perangkat Lunak, Arsitektur Basis Data & Sistem Terdistribusi (2024–Sekarang)</span>
+                  </div>
+                </div>
+
+                <div class="v3-highlight-item">
+                  <span class="v3-hl-label">HAK CIPTA</span>
+                  <div class="v3-hl-text">
+                    <strong>Kemenkumham RI No. 001059325 — Program Komputer Laporan Keuangan</strong>
+                    <span>Pencipta 1 bersama UTM & Dosen Pembimbing untuk digitalisasi buku kas UMKM Mie Aigo Kamal (Pelindungan 50 Tahun)</span>
+                  </div>
+                </div>
+
+                <div class="v3-highlight-item">
+                  <span class="v3-hl-label">PRESTASI</span>
+                  <div class="v3-hl-text">
+                    <strong>PPK Ormawa Skor #1 UTM 2026 & Finalis Essay Nasional FESMA 2026</strong>
+                    <span>Peraih poin tertinggi kampus (Smart Salt Farm Desa Bunder) dan finalis 2 karya inovasi nasional di Univ. Mataram</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kontak Sederhana & Otentik -->
+            <div class="v3-contact-row">
+              <span>✉️ dianwildanp@gmail.com</span>
+              <span>📞 +62 877-1751-1477</span>
+              <span>🌐 github.com/primantaraputra</span>
+              <span>📍 Pamekasan, Jawa Timur</span>
+            </div>
+          </div>
+
+          <!-- Sisi Kanan: Foto Profil Natural dengan Kartu Identitas Elegan -->
+          <div class="v3-cover-right">
+            <div class="v3-photo-card">
+              <img src="assets/img/foto.jpg" alt="Dian Wildan Primantara Putra" class="v3-photo-img">
+              <div class="v3-photo-info">
+                <strong>Dian Wildan Primantara Putra</strong>
+                <span>S1 Sistem Informasi • Universitas Trunojoyo Madura</span>
+                <small>Pamekasan, Madura, Jawa Timur, Indonesia</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio Pribadi</span>
+        <span>Halaman 01 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 1 (VERSI 2 - HUMAN EDITORIAL): BESPOKE MONOGRAPH COVER (TERSEDIA SAAT TOGGLE V2)
+         ======================================================== -->
+    <article class="slide-page slide-cover-v2 version-v2" id="slide-1-v2" style="display: none;">
       <!-- Top Masthead Bar: Archival publication header -->
       <div class="editorial-masthead">
         <div class="masthead-id">
@@ -299,9 +380,151 @@
     </article>
 
     <!-- ========================================================
-         SLIDE 2 (VERSI 2 - HUMAN EDITORIAL): TRI-COLUMN ARCHITECTURAL DOSSIER
+         SLIDE 2 (VERSI 3 - CLEAN HUMAN STUDIO): SPREAD EDITORIAL RESUME BERSIH (AKTIF)
          ======================================================== -->
-    <article class="slide-page slide-dossier-v2 version-v2" id="slide-2">
+    <article class="slide-page slide-overview-v3 version-v3" id="slide-2">
+      <header class="v3-slide-header">
+        <div>
+          <span class="v3-section-kicker">RINGKASAN PROFIL & REKAM JEJAK</span>
+          <h2 class="v3-section-title">Pendidikan, Kepemimpinan & Karya Inovasi</h2>
+        </div>
+        <span class="v3-slide-page-badge">02 / 10</span>
+      </header>
+
+      <div class="slide-inner">
+        <div class="v3-three-columns">
+          
+          <!-- KOLOM 1: PENDIDIKAN & KEAHLIAN TEKNIS -->
+          <div class="v3-col">
+            <h3 class="v3-col-heading">Pendidikan & Keahlian</h3>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Universitas Trunojoyo Madura</strong>
+                <span class="v3-entry-date">2024 – Sekarang</span>
+              </div>
+              <div class="v3-entry-org">S1 Sistem Informasi • IPK 3,83 / 4,00</div>
+              <p class="v3-entry-desc">
+                Fokus bidang Rekayasa Perangkat Lunak, Arsitektur Basis Data, dan Sistem Terdistribusi.
+              </p>
+            </div>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">SMK Negeri 2 Pamekasan</strong>
+                <span class="v3-entry-date">2021 – 2024</span>
+              </div>
+              <div class="v3-entry-org">Teknik Komputer dan Jaringan</div>
+              <p class="v3-entry-desc">
+                Dinobatkan sebagai Siswa Lulusan Terbaik Bidang Akademik angkatan 2021–2024.
+              </p>
+            </div>
+
+            <div class="v3-skill-list">
+              <div class="v3-skill-row">
+                <strong>Web & Fullstack:</strong>
+                <span>Next.js 16, TypeScript, PHP, Tailwind CSS, REST API</span>
+              </div>
+              <div class="v3-skill-row">
+                <strong>Mobile & Basis Data:</strong>
+                <span>Flutter & Dart, MySQL, Supabase (PostgreSQL)</span>
+              </div>
+              <div class="v3-skill-row">
+                <strong>Pengujian & Tools:</strong>
+                <span>White Box (Basis Path), Black Box, Git/GitHub, Figma UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KOLOM 2: PENGALAMAN KEPEMIMPINAN -->
+          <div class="v3-col">
+            <h3 class="v3-col-heading">Kepemimpinan & Organisasi</h3>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Sekretaris Jenderal</strong>
+                <span class="v3-entry-date">Sekarang</span>
+              </div>
+              <div class="v3-entry-org">AMUNISI — Universitas Trunojoyo Madura</div>
+              <p class="v3-entry-desc">
+                Memimpin tata kelola administrasi legal, regulasi persuratan resmi lembaga, dan koordinasi strategis lintas 5 divisi kerja organisasi.
+              </p>
+            </div>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Kepala Departemen PSDM</strong>
+                <span class="v3-entry-date">Sekarang</span>
+              </div>
+              <div class="v3-entry-org">HIMASI — Universitas Trunojoyo Madura</div>
+              <p class="v3-entry-desc">
+                Merancang kurikulum kaderisasi mahasiswa baru jurusan SI, workshop keilmuan teknologi, serta monitoring keaktifan 40+ fungsionaris.
+              </p>
+            </div>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Peserta Terbaik PKL TKJ</strong>
+                <span class="v3-entry-date">2023 – 2024</span>
+              </div>
+              <div class="v3-entry-org">PT. Telkom Akses</div>
+              <p class="v3-entry-desc">
+                Peserta magang terbaik. Pemeliharaan kabel fiber optik, perangkat transmisi ODC/ODP, dan verifikasi kelayakan jaringan telekomunikasi.
+              </p>
+            </div>
+          </div>
+
+          <!-- KOLOM 3: PRESTASI & HAK CIPTA -->
+          <div class="v3-col">
+            <h3 class="v3-col-heading">Karya Cipta & Prestasi</h3>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Hak Cipta Kemenkumham RI</strong>
+                <span class="v3-entry-date">No. 001059325</span>
+              </div>
+              <div class="v3-entry-org">Kementerian Hukum RI • Pemegang: UTM</div>
+              <p class="v3-entry-desc">
+                Pencipta 1 Website Laporan Keuangan UMKM Mie Aigo Kamal bersama UTM & dosen pembimbing. Terdaftar resmi dengan masa perlindungan 50 tahun.
+              </p>
+            </div>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">PPK Ormawa (Skor #1 Kampus)</strong>
+                <span class="v3-entry-date">2026</span>
+              </div>
+              <div class="v3-entry-org">Smart Salt Farm — Desa Bunder, Pamekasan</div>
+              <p class="v3-entry-desc">
+                Peraih nilai tertinggi seleksi proposal se-UTM. Rekayasa model desa garam mandiri menggunakan geoisolator adaptif iklim digital.
+              </p>
+            </div>
+
+            <div class="v3-entry">
+              <div class="v3-entry-top">
+                <strong class="v3-entry-title">Finalis Nasional FESMA & I2AC</strong>
+                <span class="v3-entry-date">2026</span>
+              </div>
+              <div class="v3-entry-org">Sentosa Foundation, UNRAM & FEB UTM</div>
+              <p class="v3-entry-desc">
+                Finalis essay nasional 2 karya inovasi (FORGUARD & SIAGA-TPS) serta peraih penghargaan Honorable Mention 1 Lomba Business Plan I2AC UTM 2026.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio Pribadi</span>
+        <span>Halaman 02 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 2 (VERSI 2 - HUMAN EDITORIAL): TRI-COLUMN ARCHITECTURAL DOSSIER (TERSEDIA SAAT TOGGLE V2)
+         ======================================================== -->
+    <article class="slide-page slide-dossier-v2 version-v2" id="slide-2-v2" style="display: none;">
       <header class="slide-header">
         <div>
           <div class="header-tags">
@@ -1293,23 +1516,37 @@
   <!-- Script Interaktif Switcher Versi (Untuk Pratinjau di Browser) -->
   <script>
     function switchVersion(ver) {
+      const v3Elements = document.querySelectorAll('.version-v3');
       const v2Elements = document.querySelectorAll('.version-v2');
       const v1Elements = document.querySelectorAll('.version-v1');
+      const btnV3 = document.getElementById('btn-v3');
       const btnV2 = document.getElementById('btn-v2');
       const btnV1 = document.getElementById('btn-v1');
 
       if (ver === 'v1') {
+        v3Elements.forEach(el => el.style.display = 'none');
         v2Elements.forEach(el => el.style.display = 'none');
         v1Elements.forEach(el => el.style.display = 'flex');
         if (btnV1) btnV1.classList.add('active');
         if (btnV2) btnV2.classList.remove('active');
+        if (btnV3) btnV3.classList.remove('active');
         try { sessionStorage.setItem('portfolio_deck_version', 'v1'); } catch(e){}
-      } else {
+      } else if (ver === 'v2') {
+        v3Elements.forEach(el => el.style.display = 'none');
         v1Elements.forEach(el => el.style.display = 'none');
         v2Elements.forEach(el => el.style.display = 'flex');
         if (btnV2) btnV2.classList.add('active');
         if (btnV1) btnV1.classList.remove('active');
+        if (btnV3) btnV3.classList.remove('active');
         try { sessionStorage.setItem('portfolio_deck_version', 'v2'); } catch(e){}
+      } else {
+        v1Elements.forEach(el => el.style.display = 'none');
+        v2Elements.forEach(el => el.style.display = 'none');
+        v3Elements.forEach(el => el.style.display = 'flex');
+        if (btnV3) btnV3.classList.add('active');
+        if (btnV2) btnV2.classList.remove('active');
+        if (btnV1) btnV1.classList.remove('active');
+        try { sessionStorage.setItem('portfolio_deck_version', 'v3'); } catch(e){}
       }
     }
 
@@ -1318,6 +1555,10 @@
         const saved = sessionStorage.getItem('portfolio_deck_version');
         if (saved === 'v1') {
           switchVersion('v1');
+        } else if (saved === 'v2') {
+          switchVersion('v2');
+        } else {
+          switchVersion('v3');
         }
       } catch(e){}
     });
