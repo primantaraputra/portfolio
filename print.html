@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio — Dian Wildan Primantara Putra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+  <!-- Floating Top Bar untuk Preview di Web (Otomatis hilang saat print / PDF export) -->
+  <header class="deck-topbar no-print">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-title">Portofolio</span>
+        <span class="topbar-badge">10 Slide • A4 Widescreen</span>
+      </div>
+      <div class="topbar-right">
+        <a href="index.html" class="topbar-btn topbar-btn-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Kembali ke Web
+        </a>
+        <a href="assets/files/Portofolio-DianWildanPrimantaraPutra.pdf" download="Portofolio-DianWildanPrimantaraPutra.pdf" class="topbar-btn topbar-btn-foxglove">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Unduh PDF Landscape
+        </a>
+        <button onclick="window.print()" class="topbar-btn topbar-btn-white">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Cetak PDF
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="slide-deck">
+    
+    <!-- ========================================================
+         SLIDE 1: COVER / TITLE SLIDE (Keynote Style)
+         ======================================================== -->
+    <article class="slide-page slide-cover" id="slide-1">
+      <div class="slide-inner">
+        
+        <div class="cover-layout">
+          <!-- Sisi Kiri: Judul Besar, Bio Ringkas & Highlight Metrics -->
+          <div class="cover-content">
+            <div class="cover-eyebrow">
+              <span class="eyebrow-tag">PORTOFOLIO</span>
+              <span class="eyebrow-year">2026</span>
+            </div>
+
+            <h1 class="cover-name">Dian Wildan<br>Primantara Putra</h1>
+            
+            <p class="cover-role">
+              Information Systems Student • Web & Mobile Developer • Tech Enthusiast
+            </p>
+
+            <p class="cover-bio">
+              Mahasiswa aktif Sistem Informasi di Universitas Trunojoyo Madura dengan dedikasi pada pengembangan aplikasi web & mobile, rekayasa proses bisnis, serta kepemimpinan organisasi teknologi.
+            </p>
+
+            <!-- 4 Highlight Metrics / Pillars -->
+            <div class="cover-metrics-row">
+              <div class="metric-pill">
+                <span class="metric-val">3,83</span>
+                <span class="metric-lbl">IPK S1 SI UTM</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-val">001059325</span>
+                <span class="metric-lbl">Hak Cipta Kemenkumham RI</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-val">FESMA & I2AC</span>
+                <span class="metric-lbl">Finalis & Honorable Mention</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-val">PPK Ormawa</span>
+                <span class="metric-lbl">Poin Tertinggi UTM 2026</span>
+              </div>
+            </div>
+
+            <!-- Strip Kontak Minimalis -->
+            <div class="cover-contact-strip">
+              <span>dianwildanp@gmail.com</span>
+              <span class="dot-sep">•</span>
+              <span>+62 877-1751-1477</span>
+              <span class="dot-sep">•</span>
+              <span>github.com/primantaraputra</span>
+              <span class="dot-sep">•</span>
+              <span>Pamekasan, Madura</span>
+            </div>
+          </div>
+
+          <!-- Sisi Kanan: Foto Profil Besar & Kartu Identitas Elegan -->
+          <div class="cover-visual">
+            <div class="cover-photo-frame">
+              <img src="assets/img/foto.jpg" alt="Dian Wildan Primantara Putra" class="cover-photo">
+            </div>
+            <div class="cover-photo-caption">
+              <strong>Dian Wildan Primantara Putra</strong>
+              <span>Web & Mobile Developer • Madura, Jawa Timur</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 01 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 2: LEADERSHIP, EXPERIENCE & TECHNICAL STACK
+         ======================================================== -->
+    <article class="slide-page" id="slide-2">
+      <header class="slide-header">
+        <div>
+          <span class="slide-eyebrow">BACKGROUND & COMPETENCIES</span>
+          <h2 class="slide-title">Pengalaman, Kepemimpinan & Keahlian</h2>
+          <p class="slide-subtitle">Rekam jejak kepemimpinan organisasi, pengalaman praktik industri, dan keahlian teknis.</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">02</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="overview-two-col">
+          
+          <!-- Kolom Kiri: Riwayat Pengalaman & Kepemimpinan -->
+          <div class="overview-col-left">
+            <h3 class="col-section-title">PENGALAMAN & PRESTASI</h3>
+
+            <div class="timeline-stream">
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">Sekretaris Jenderal</strong>
+                    <span class="timeline-tag">Sekarang</span>
+                  </div>
+                  <div class="timeline-org">AMUNISI — Universitas Trunojoyo Madura</div>
+                  <p class="timeline-desc">
+                    Memimpin tata kelola administrasi resmi, tata persuratan kelembagaan, serta koordinasi strategis lintas divisi kerja.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">Kepala Departemen PSDM</strong>
+                    <span class="timeline-tag">Sekarang</span>
+                  </div>
+                  <div class="timeline-org">HIMASI — Himpunan Mahasiswa Sistem Informasi UTM</div>
+                  <p class="timeline-desc">
+                    Merancang program kaderisasi mahasiswa, workshop teknis keilmuan, serta monitoring kinerja pengurus himpunan.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">PPK Ormawa (Poin Tertinggi UTM 2026)</strong>
+                    <span class="timeline-tag">2026</span>
+                  </div>
+                  <div class="timeline-org">Smart Salt Farm — Desa Bunder, Kab. Pamekasan</div>
+                  <p class="timeline-desc">
+                    Peraih skor tertinggi se-kampus UTM. Judul: <em>SMART SALT FARM : Implementasi Geoisolator Adaptif Iklim Digital sebagai Model Desa Mandiri Garam Berkelanjutan</em>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">Finalis Essay Nasional FESMA 2026 (2 Judul)</strong>
+                    <span class="timeline-tag">2026</span>
+                  </div>
+                  <div class="timeline-org">Sentosa Foundation & BEM Faperta UNRAM (SK Kemenkumham RI)</div>
+                  <p class="timeline-desc">
+                    Finalis nasional membawakan 2 inovasi: 1) <strong>FORGUARD</strong> (Deteksi Penebangan Liar Sensor Akustik/Getaran) & 2) <strong>SIAGA-TPS</strong> (IoT & Dasbor Risiko Sampah Telang).
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">Lomba Business Plan I2AC (Honorable Mention 1)</strong>
+                    <span class="timeline-tag">2026</span>
+                  </div>
+                  <div class="timeline-org">Business Plan I2AC — BEM FEB Universitas Trunojoyo Madura</div>
+                  <p class="timeline-desc">
+                    Meraih penghargaan Honorable Mention 1 pada kompetisi Business Plan I2AC tingkat universitas yang diselenggarakan oleh BEM FEB UTM 2026.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <div class="timeline-head">
+                    <strong class="timeline-role">Magang IT & Jaringan (Peserta Terbaik PKL)</strong>
+                    <span class="timeline-tag">Okt 2023 – Mar 2024</span>
+                  </div>
+                  <div class="timeline-org">PT. Telkom Akses</div>
+                  <p class="timeline-desc">
+                    Dinobatkan sebagai Peserta Terbaik PKL TKJ. Melakukan pemeliharaan dan pemantauan kabel fiber optik serta perangkat jaringan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Pendidikan & Tech Stack -->
+          <div class="overview-col-right">
+            
+            <div class="side-block">
+              <h3 class="col-section-title">PENDIDIKAN & PRESTASI</h3>
+              
+              <div class="edu-card">
+                <div class="edu-logo-box">
+                  <img src="assets/img/logo-utm.png" alt="UTM" class="edu-logo-deck">
+                </div>
+                <div>
+                  <strong class="edu-school">Universitas Trunojoyo Madura</strong>
+                  <div class="edu-detail">S1 Sistem Informasi • IPK 3,83 / 4,00 (2024 – Sekarang)</div>
+                  <div class="edu-sub">Fokus studi pada Software Engineering & Arsitektur Basis Data</div>
+                </div>
+              </div>
+
+              <div class="edu-card">
+                <div class="edu-logo-box">
+                  <img src="assets/img/logo-smk.png" alt="SMKN 2 Pamekasan" class="edu-logo-deck">
+                </div>
+                <div>
+                  <strong class="edu-school">SMK Negeri 2 Pamekasan</strong>
+                  <div class="edu-detail">Teknik Komputer & Jaringan (2021 – 2024)</div>
+                  <div class="edu-sub">Siswa Lulusan Terbaik Bidang Akademik</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <h3 class="col-section-title">KEAHLIAN TEKNIS (TECH STACK)</h3>
+              
+              <div class="skill-group">
+                <span class="skill-group-name">Web & Fullstack:</span>
+                <div class="skill-pills">
+                  <span class="pill">Next.js 16</span>
+                  <span class="pill">PHP</span>
+                  <span class="pill">TypeScript</span>
+                  <span class="pill">JavaScript</span>
+                  <span class="pill">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <span class="skill-group-name">Mobile & Database:</span>
+                <div class="skill-pills">
+                  <span class="pill">Flutter & Dart</span>
+                  <span class="pill">MySQL</span>
+                  <span class="pill">Supabase (PostgreSQL)</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <span class="skill-group-name">Tools & QA Testing:</span>
+                <div class="skill-pills">
+                  <span class="pill">Git & GitHub</span>
+                  <span class="pill">White & Black Box Testing</span>
+                  <span class="pill">REST API</span>
+                  <span class="pill">Python</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 02 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 3: FEATURED PROJECT 01 — MIE AIGO KAMAL (HAK CIPTA)
+         ======================================================== -->
+    <article class="slide-page" id="slide-3">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">FEATURED PROJECT 01</span>
+            <span class="cert-pill">SURAT PENCATATAN CIPTAAN NO. 001059325</span>
+          </div>
+          <h2 class="slide-title">Pembuatan Website Untuk Laporan Keuangan (UMKM Mie Aigo Kamal)</h2>
+          <p class="slide-subtitle">Program Komputer Resmi Tercatat Hak Cipta Kemenkumham RI • UTM Madura • 2025</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">03</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="project-slide-grid">
+          
+          <!-- Kiri: Mockup Visual Bersih & Luas -->
+          <div class="project-visual-col">
+            <div class="mockup-clean-frame">
+              <img src="assets/img/project-mie-aigo.jpg?v=3" alt="Antarmuka Web Pemesanan & Kasir UMKM Mie Aigo Kamal" class="mockup-clean-img">
+            </div>
+            <div class="project-meta-strip">
+              <div class="meta-status">
+                <strong>No. Pencatatan:</strong> 001059325 • Permohonan EC002025219065
+              </div>
+              <div class="meta-link">Hak Cipta: Universitas Trunojoyo Madura</div>
+            </div>
+          </div>
+
+          <!-- Kanan: Breakdown Studi Kasus yang Lapang -->
+          <div class="project-narrative-col">
+            
+            <div class="narrative-block">
+              <h4 class="narrative-title">LATAR BELAKANG & LEGALITAS CIPTAAN</h4>
+              <p class="narrative-text">
+                Program komputer website laporan keuangan ini dirancang untuk mengatasi kendala pencatatan buku kas manual pada UMKM kuliner Mie Aigo Kamal (Kamal, Bangkalan). Karya teknologi ini diakui secara legalitas kenegaraan melalui Surat Pencatatan Ciptaan resmi Kementerian Hukum Republik Indonesia.
+              </p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">POIN LEGALITAS & FITUR UTAMA SISTEM</h4>
+              <div class="story-points">
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Pencipta Utama:</strong> Dian Wildan Primantara Putra (Pencipta No. 1 bersama tim mahasiswa & dosen pembimbing Drs. Budi Soesilo.,MT).
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Perlindungan Hak Cipta:</strong> Tercatat atas nama Universitas Trunojoyo Madura dengan masa pelindungan 50 tahun sejak pengumuman (9 Des 2025).
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Fungsionalitas Perangkat Lunak:</strong> Pencatatan kas harian digital, modul arus kas terverifikasi, kalkulasi margin laba-rugi otomatis, dan rekapitulasi periodik.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">ARSITEKTUR TEKNOLOGI</h4>
+              <div class="tech-pills-row">
+                <span class="pill pill-accent">PHP Backend Architecture</span>
+                <span class="pill pill-accent">MySQL Relational DB</span>
+                <span class="pill pill-accent">JavaScript ES6</span>
+                <span class="pill pill-accent">Sistem Akuntansi UMKM</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Kemenkumham RI Surat Pencatatan Ciptaan No. 001059325 • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 03 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 4: FEATURED PROJECT 02 — CHEESE DRINK POS
+         ======================================================== -->
+    <article class="slide-page" id="slide-4">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">FEATURED PROJECT 02</span>
+            <span class="tech-tag">FULLSTACK MODERN WEB APPLICATION</span>
+          </div>
+          <h2 class="slide-title">Cheese Drink Point of Sale & Inventory</h2>
+          <p class="slide-subtitle">Sistem Kasir Modern & Sinkronisasi Inventaris Bahan Baku Multi-Cabang • 2026</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">04</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="project-slide-grid">
+          
+          <!-- Kiri: Mockup Visual Bersih & Luas -->
+          <div class="project-visual-col">
+            <div class="mockup-clean-frame">
+              <img src="assets/img/project-cheese-drink-dashboard.png" alt="Cheese Drink Point of Sale Interface — Dashboard Ringkasan Usaha" class="mockup-clean-img">
+            </div>
+            <div class="project-meta-strip">
+              <div class="meta-status">
+                <strong>Arsitektur:</strong> Next.js 16 App Router + Supabase PostgreSQL
+              </div>
+              <div class="meta-link">github.com/primantaraputra</div>
+            </div>
+          </div>
+
+          <!-- Kanan: Breakdown Studi Kasus yang Lapang -->
+          <div class="project-narrative-col">
+            
+            <div class="narrative-block">
+              <h4 class="narrative-title">KEBUTUHAN OPERASIONAL GERAI</h4>
+              <p class="narrative-text">
+                Bisnis gerai minuman membutuhkan proses pemesanan kasir berlatensi rendah saat jam sibuk, dukungan varian ukuran dan topping fleksibel, serta pengurangan stok bahan baku (susu, keju, sirup) secara otomatis saat checkout.
+              </p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SOLUSI REKAYASA & FITUR KUNCI</h4>
+              <div class="story-points">
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Antarmuka Kasir Responsif:</strong> Pemilihan menu kilat, kustomisasi topping, dan kalkulasi total instan.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Inventaris Terpotong Otomatis:</strong> Resep bahan baku terintegrasi ke database berkurang realtime per transaksi.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Manajemen Sesi Shift Kasir:</strong> Rekonsiliasi modal kas laci, pembayaran QRIS/tunai, dan penutupan shift.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SPESIFIKASI TEKNOLOGI</h4>
+              <div class="tech-pills-row">
+                <span class="pill pill-accent">Next.js 16</span>
+                <span class="pill pill-accent">TypeScript</span>
+                <span class="pill pill-accent">Supabase (PostgreSQL)</span>
+                <span class="pill pill-accent">Tailwind CSS</span>
+                <span class="pill pill-accent">Zustand</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Portofolio Rekayasa Perangkat Lunak • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 04 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 5: FEATURED PROJECT 03 — SINAU.in
+         ======================================================== -->
+    <article class="slide-page" id="slide-5">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">FEATURED PROJECT 03</span>
+            <span class="tech-tag">CAMPUS EVENT HUB & E-TICKETING PLATFORM</span>
+          </div>
+          <h2 class="slide-title">SINAU.in — Hub Informasi & Registrasi Kegiatan Kampus</h2>
+          <p class="slide-subtitle">Solusi Terpusat Seminar, Workshop & E-Ticketing Kegiatan Mahasiswa Lintas Fakultas • 2026</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">05</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="project-slide-grid">
+          
+          <!-- Kiri: Mockup Visual Bersih & Luas -->
+          <div class="project-visual-col">
+            <div class="mockup-clean-frame mockup-mobile-fit">
+              <img src="assets/img/project-sinau-in.jpg" alt="SINAU.in Mobile App Interface" class="mockup-clean-img">
+            </div>
+            <div class="project-meta-strip">
+              <div class="meta-status">
+                <strong>Platform:</strong> Mobile & Web App Ecosystem
+              </div>
+              <div class="meta-link">github.com/primantaraputra</div>
+            </div>
+          </div>
+
+          <!-- Kanan: Breakdown Studi Kasus yang Lapang -->
+          <div class="project-narrative-col">
+            
+            <div class="narrative-block">
+              <h4 class="narrative-title">LATAR BELAKANG & TANTANGAN KAMPUS</h4>
+              <p class="narrative-text">
+                Informasi agenda seminar, workshop, dan pelatihan kerap terfragmentasi di grup WhatsApp atau media sosial internal ormawa/prodi. Mahasiswa lintas fakultas kehilangan kesempatan belajar, sementara pihak penyelenggara kesulitan memaksimalkan kuota dan jangkauan audiens.
+              </p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SOLUSI REKAYASA & FITUR KUNCI</h4>
+              <div class="story-points">
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Katalog Terpusat & Multi-Filter:</strong> Eksplorasi event berdasarkan kategori (Seminar, Workshop, Pelatihan) dan penyelenggara (Ormawa, UKM, GDGoC Trunojoyo).
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Pendaftaran Instan & Tiket QR Code:</strong> Registrasi satu ketukan dengan tiket digital QR code untuk check-in presensi di lokasi.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Kalender & Notifikasi Pengingat:</strong> Fitur simpan jadwal (bookmark) terintegrasi ke kalender pribadi serta reminder H-1 acara.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Submit Event & E-Sertifikat Otomatis:</strong> Kurasi verifikasi event ormawa oleh admin serta distribusi sertifikat digital pasca acara.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SPESIFIKASI TEKNOLOGI</h4>
+              <div class="tech-pills-row">
+                <span class="pill pill-accent">Flutter & Dart</span>
+                <span class="pill pill-accent">Next.js</span>
+                <span class="pill pill-accent">Supabase (PostgreSQL)</span>
+                <span class="pill pill-accent">QR Code E-Ticket</span>
+                <span class="pill pill-accent">REST API</span>
+                <span class="pill pill-accent">UI/UX Design</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Solusi Digitalisasi Kegiatan Mahasiswa • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 05 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 6: FEATURED PROJECT 04 — PT CMS MAJU SEJAHTERA REDESIGN
+         ======================================================== -->
+    <article class="slide-page" id="slide-6">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">FEATURED PROJECT 04</span>
+            <span class="tech-tag">FIGMA • UI/UX MOBILE REDESIGN</span>
+          </div>
+          <h2 class="slide-title">Redesign Aplikasi Mobile Promotor (PT CMS Maju Sejahtera)</h2>
+          <p class="slide-subtitle">UI/UX Redesign & Design System Aplikasi Operasional Sales Lapangan di Figma • 2026</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">06</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="project-slide-grid">
+          
+          <!-- Kiri: Mockup Visual Bersih & Luas -->
+          <div class="project-visual-col">
+            <div class="mockup-clean-frame mockup-mobile-fit">
+              <img src="assets/img/project-cms-redesign.png" alt="PT CMS Maju Sejahtera Mobile Redesign Figma" class="mockup-clean-img">
+            </div>
+            <div class="project-meta-strip">
+              <div class="meta-status">
+                <strong>Platform:</strong> Mobile UI/UX Design System
+              </div>
+              <div class="meta-link">Figma Workspace</div>
+            </div>
+          </div>
+
+          <!-- Kanan: Breakdown Studi Kasus yang Lapang -->
+          <div class="project-narrative-col">
+            
+            <div class="narrative-block">
+              <h4 class="narrative-title">LATAR BELAKANG & KEBUTUHAN OPERASIONAL</h4>
+              <p class="narrative-text">
+                Tenaga promotor & sales lapangan PT CMS Maju Sejahtera memerlukan antarmuka kerja berlatensi kognitif rendah. Redesign difokuskan pada kejelasan agenda demo produk harian, pelacakan target penjualan secara transparan, serta akses data kompensasi yang cepat di mobilitas lapangan.
+              </p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SOLUSI DESAIN & FITUR KUNCI</h4>
+              <div class="story-points">
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Dashboard Promotor Personal:</strong> Area profil dengan identitas akun, status promotor aktif, dan kartu ringkasan penugasan demo harian.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Monitoring Capaian Sales Visual:</strong> Grafik progress bar capaian bulanan dan kuantitas sales order dengan visualisasi performa langsung.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Rekonsiliasi Insentif Transparan:</strong> Pelacakan estimasi insentif hasil penjualan secara akurat dan mudah diakses.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Arsitektur Navigasi Satu Tangan:</strong> Bottom navigation 4 menu inti (Home, Demo, Info Produk, Profil) yang dioptimasi untuk interaksi perangkat bergerak.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SPESIFIKASI TEKNOLOGI & METODOLOGI</h4>
+              <div class="tech-pills-row">
+                <span class="pill pill-accent">Figma</span>
+                <span class="pill pill-accent">UI/UX Design</span>
+                <span class="pill pill-accent">Design System</span>
+                <span class="pill pill-accent">Mobile Redesign</span>
+                <span class="pill pill-accent">Wireframing</span>
+                <span class="pill pill-accent">Prototyping</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Desain Antarmuka Mobile Enterprise • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 06 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 7: FEATURED PROJECT 05 — LAUNDRY YENNY TELANG & QA TESTING
+         ======================================================== -->
+    <article class="slide-page" id="slide-7">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">FEATURED PROJECT 05</span>
+            <span class="tech-tag">WEB APP • WHITE BOX & BLACK BOX TESTING</span>
+          </div>
+          <h2 class="slide-title">Aplikasi Web Laundry Yenny Telang & Pengujian Sistem</h2>
+          <p class="slide-subtitle">Sistem Manajemen Kasir & Rekapitulasi Laporan Keuangan Teruji Quality Assurance • 2026</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">07</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="project-slide-grid">
+          
+          <!-- Kiri: Mockup Visual Bersih & Luas -->
+          <div class="project-visual-col">
+            <div class="mockup-clean-frame mockup-mobile-fit">
+              <img src="assets/img/project-laundry-yenny.png" alt="Aplikasi Web Laundry Yenny Telang Laporan Harian" class="mockup-clean-img">
+            </div>
+            <div class="project-meta-strip">
+              <div class="meta-status">
+                <strong>Pengujian:</strong> White Box (Basis Path) & Black Box Testing
+              </div>
+              <div class="meta-link">Telang, Bangkalan, Madura</div>
+            </div>
+          </div>
+
+          <!-- Kanan: Breakdown Studi Kasus yang Lapang -->
+          <div class="project-narrative-col">
+            
+            <div class="narrative-block">
+              <h4 class="narrative-title">LATAR BELAKANG & KEBUTUHAN OPERASIONAL UMKM</h4>
+              <p class="narrative-text">
+                Laundry Yenny di kawasan Telang, Madura membutuhkan sistem pencatatan digital untuk memantau omzet bulanan, mengontrol transaksi masuk harian, rekapitulasi item pakaian yang telah diambil pelanggan, serta meminimalisir kesalahan perhitungan kas manual.
+              </p>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">FITUR UTAMA & METODOLOGI PENGUJIAN PERANGKAT LUNAK</h4>
+              <div class="story-points">
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Dashboard Laporan Finansial:</strong> Pemantauan real-time pendapatan harian, akumulasi omzet kasir, status transaksi masuk, dan pencatatan item diambil/batal.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Pengujian White Box Testing:</strong> Analisis struktur kode internal, perancangan diagram alir kendali (flow graph), serta verifikasi <em>basis path testing</em> dan <em>cyclomatic complexity</em> guna memastikan seluruh percabangan logika dieksekusi tanpa celah.
+                  </div>
+                </div>
+                <div class="point-item">
+                  <div class="point-marker"></div>
+                  <div>
+                    <strong>Pengujian Black Box Testing:</strong> Pengujian fungsionalitas antarmuka menggunakan teknik <em>Equivalence Partitioning</em> dan <em>Boundary Value Analysis</em> untuk validasi formulir input bobot kiloan pakaian, tarif layanan, dan keakuratan total tagihan kasir.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="narrative-block">
+              <h4 class="narrative-title">SPESIFIKASI TEKNOLOGI & METODOLOGI</h4>
+              <div class="tech-pills-row">
+                <span class="pill pill-accent">PHP & Web Dev</span>
+                <span class="pill pill-accent">MySQL Relational DB</span>
+                <span class="pill pill-accent">White Box Testing</span>
+                <span class="pill pill-accent">Black Box Testing</span>
+                <span class="pill pill-accent">Basis Path Testing</span>
+                <span class="pill pill-accent">Software Quality Assurance</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Pengembangan Web & Software Quality Assurance • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 07 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 8: LAMPIRAN LEGALITAS CIPTAAN — HAK CIPTA KEMENKUMHAM RI
+         ======================================================== -->
+    <article class="slide-page" id="slide-8">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">LAMPIRAN LEGALITAS CIPTAAN RESMI</span>
+            <span class="cert-pill">KEMENKUMHAM RI NO. 001059325</span>
+          </div>
+          <h2 class="slide-title">Surat Pencatatan Ciptaan — Website Laporan Keuangan UMKM</h2>
+          <p class="slide-subtitle">Direktorat Jenderal Kekayaan Intelektual, Kementerian Hukum RI • Terdaftar 9 Desember 2025</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">08</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="cert-showcase-container">
+          <div class="cert-display-frame">
+            <img src="assets/img/haki-mie-aigo.jpg" alt="Surat Pencatatan Ciptaan Kemenkumham RI Lengkap" class="cert-display-img">
+          </div>
+          <div class="project-meta-strip">
+            <div class="meta-status">
+              <strong>Nomor Pencatatan:</strong> 001059325 • Permohonan: EC002025219065 • Jenis: Program Komputer
+            </div>
+            <div class="meta-link">Pemegang: Universitas Trunojoyo Madura • Pencipta 1: Dian Wildan Primantara Putra</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Bukti Legalitas Hak Cipta Kemenkumham RI • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 08 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 9: LAMPIRAN PRESTASI 01 — HONORABLE MENTION 1 I2AC 2026
+         ======================================================== -->
+    <article class="slide-page" id="slide-9">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">LAMPIRAN SERTIFIKAT PRESTASI 01</span>
+            <span class="tech-tag">HONORABLE MENTION 1 • BUSINESS PLAN I2AC</span>
+          </div>
+          <h2 class="slide-title">Sertifikat Penghargaan Lomba Business Plan I2AC 2026</h2>
+          <p class="slide-subtitle">Badan Eksekutif Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Trunojoyo Madura (No: 003/SRT/B1/KM-UTM/2026)</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">09</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="cert-showcase-container">
+          <div class="cert-display-frame">
+            <img src="assets/img/sertifikat-i2ac-honorable-mention.png" alt="Sertifikat Honorable Mention 1 I2AC 2026 BEM FEB UTM" class="cert-display-img">
+          </div>
+          <div class="project-meta-strip">
+            <div class="meta-status">
+              <strong>Kompetisi:</strong> Idea Innovation Akselerasi Challenge (I2AC) BEM FEB UTM 2026
+            </div>
+            <div class="meta-link">Penerima: Dian Wildan Primantara P • Penghargaan: Honorable Mention 1</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Kompetisi Inovasi Bisnis Mahasiswa • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 09 / 10</span>
+      </footer>
+    </article>
+
+    <!-- ========================================================
+         SLIDE 10: LAMPIRAN PRESTASI 02 — FINALIS ESSAY NASIONAL FESMA 2026
+         ======================================================== -->
+    <article class="slide-page" id="slide-10">
+      <header class="slide-header">
+        <div>
+          <div class="header-tags">
+            <span class="slide-eyebrow">LAMPIRAN SERTIFIKAT PRESTASI 02</span>
+            <span class="tech-tag">FINALIS TINGKAT NASIONAL • FESMA 2026</span>
+          </div>
+          <h2 class="slide-title">Sertifikat Finalis Lomba Essay Tingkat Nasional FESMA 2026</h2>
+          <p class="slide-subtitle">Sentosa Foundation & BEM Fakultas Pertanian Universitas Mataram (SK Kemenkumham: AHU-0033356.AH.01.04)</p>
+        </div>
+        <div class="slide-counter">
+          <span class="current-num">10</span>
+          <span class="total-num">/ 10</span>
+        </div>
+      </header>
+
+      <div class="slide-inner">
+        <div class="cert-showcase-container">
+          <div class="cert-display-frame">
+            <img src="assets/img/sertifikat-fesma-finalis.png" alt="Sertifikat Finalis Lomba Essay Tingkat Nasional FESMA 2026" class="cert-display-img">
+          </div>
+          <div class="project-meta-strip">
+            <div class="meta-status">
+              <strong>No. Sertifikat:</strong> 044/FESMA/FINALIS/SF-BEM-FAPERTA-UNRAM/IX/2026 • Lombok, 26-28 September 2026
+            </div>
+            <div class="meta-link">Finalis 2 Karya Inovasi: FORGUARD (Sensor Deforestasi) & SIAGA-TPS (IoT Sampah)</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Festival Essay Siswa, Mahasiswa dan Akademisi (FESMA) • Dian Wildan Primantara Putra — Portofolio</span>
+        <span>Slide 10 / 10</span>
+      </footer>
+    </article>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Dian Wildan Primantara Putra — Mahasiswa Sistem Informasi Universitas Trunojoyo Madura, Web & Mobile Developer, Finalis I2EC, PPK Ormawa, Pemegang Hak Cipta Kemenkumham RI">
+  <title id="page-title">Dian Wildan Primantara Putra — Portofolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-body">
+
+  <!-- Fixed Top Navbar -->
+  <nav class="site-nav-bar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        Dian<span class="brand-accent">.</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-menu" id="nav-menu">
+        <a href="#profile" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="assets/files/CV-DianWildanPrimantaraPutra.pdf" id="header-cv-btn" class="nav-cv-btn" download="CV-DianWildanPrimantaraPutra.pdf" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          CV
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <a href="#profile" class="mobile-nav-link">About Me</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#experience" class="mobile-nav-link">Experience & Achievements</a>
+      <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+      <a href="#skills" class="mobile-nav-link">Tech Stack & Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact Info</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    
+    <!-- ==========================================
+         HERO SECTION (Inspired by Ivan's clean layout)
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Glowing Circular Avatar with Foxglove Halo Ring -->
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="assets/img/foto.jpg" alt="Foto Dian Wildan Primantara Putra" class="avatar-img" width="190" height="190">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Heading & Tagline -->
+      <div class="hero-text-block">
+        <span class="hero-greeting-pill">Selamat datang di portofolio saya</span>
+        <h1 class="hero-title">
+          Halo, saya <span class="highlight-foxglove">Dian Wildan Primantara Putra</span>
+        </h1>
+        <p class="hero-tagline">
+          Information Systems Student | Web & Mobile Developer | Tech Enthusiast
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="hero-action-group">
+          <a href="assets/files/CV-DianWildanPrimantaraPutra.pdf" id="hero-cv-btn" class="btn btn-primary" download="CV-DianWildanPrimantaraPutra.pdf" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="assets/files/Portofolio-DianWildanPrimantaraPutra.pdf" id="hero-portfolio-btn" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Download Portofolio
+          </a>
+          <a href="#projects" class="btn btn-ghost">
+            Lihat Project ↓
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION (Profile Points ala Ivan)
+         ========================================== -->
+    <section class="section" id="profile">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-card">
+        <p class="about-lead">
+          Mahasiswa aktif Sistem Informasi di Universitas Trunojoyo Madura dengan dedikasi pada pengembangan aplikasi web & mobile, rekayasa proses bisnis, serta kepemimpinan organisasi teknologi.
+        </p>
+
+        <ul class="about-feature-list">
+          <li class="feature-row">
+            <div class="check-icon-circle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="feature-content">
+              <strong>Full-Stack & Mobile Development:</strong>
+              <span>Berpengalaman membangun aplikasi web dan mobile berbasis Next.js, Flutter, PHP, dan Supabase yang berorientasi pada kebutuhan pengguna.</span>
+            </div>
+          </li>
+
+          <li class="feature-row">
+            <div class="check-icon-circle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="feature-content">
+              <strong>Hak Cipta Kemenkumham RI:</strong>
+              <span>Pencipta bersama website laporan keuangan UMKM yang resmi tercatat Hak Cipta Program Komputer di Kementerian Hukum RI (No. 001059325).</span>
+            </div>
+          </li>
+
+          <li class="feature-row">
+            <div class="check-icon-circle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="feature-content">
+              <strong>Kompetisi & Prestasi Kampus:</strong>
+              <span>Peraih penghargaan Honorable Mention 1 Lomba Business Plan I2AC BEM FEB UTM 2026 & lolos seleksi internal PPK Ormawa dengan perolehan skor/poin tertinggi se-Universitas Trunojoyo Madura.</span>
+            </div>
+          </li>
+
+          <li class="feature-row">
+            <div class="check-icon-circle">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="feature-content">
+              <strong>Proven Leadership & Teamwork:</strong>
+              <span>Aktif memimpin roda kelembagaan sebagai Sekretaris Jenderal AMUNISI UTM dan Kepala Departemen PSDM HIMASI UTM.</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="about-action">
+          <a href="assets/files/CV-DianWildanPrimantaraPutra.pdf" class="inline-cv-link" download="CV-DianWildanPrimantaraPutra.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Download Curriculum Vitae (CV)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cards-stack">
+        <!-- Kampus UTM -->
+        <div class="edu-card-item">
+          <div class="edu-icon-badge">
+            <img src="assets/img/logo-utm.png" alt="Logo Universitas Trunojoyo Madura" class="edu-logo-img">
+          </div>
+          <div class="edu-info">
+            <span class="edu-level">Bachelor's Degree (S1)</span>
+            <h3 class="edu-school-name">Universitas Trunojoyo Madura</h3>
+            <p class="edu-major">S1 Sistem Informasi • IPK 3,83 / 4,00</p>
+            <span class="edu-years">2024 – Sekarang</span>
+          </div>
+        </div>
+
+        <!-- SMK 2 Pamekasan -->
+        <div class="edu-card-item">
+          <div class="edu-icon-badge">
+            <img src="assets/img/logo-smk.png" alt="Logo SMK Negeri 2 Pamekasan" class="edu-logo-img">
+          </div>
+          <div class="edu-info">
+            <span class="edu-level">Vocational High School</span>
+            <h3 class="edu-school-name">SMK Negeri 2 Pamekasan</h3>
+            <p class="edu-major">Teknik Komputer dan Jaringan — Siswa Lulusan Terbaik Bidang Akademik</p>
+            <span class="edu-years">2021 – 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE & ACHIEVEMENTS SECTION (Ala Ivan dengan border-l aksen & collapsible detail)
+         ========================================== -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Achievements</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cards-stack">
+        
+        <!-- Experience 1: Sekjen AMUNISI -->
+        <div class="exp-card-item">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill">Organisasi</span>
+              <span class="exp-time">Sekarang</span>
+              <h3 class="exp-role-title">Sekretaris Jenderal</h3>
+              <p class="exp-org-name">AMUNISI — Universitas Trunojoyo Madura</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-1" aria-expanded="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body" id="exp-detail-1">
+            <ul class="exp-points-list">
+              <li>Memimpin tata kelola administrasi resmi, tata persuratan kelembagaan, dan pemberkasan organisasi.</li>
+              <li>Mengoordinasikan seluruh divisi agar pelaksanaan program kerja berjalan lancar dan tepat sasaran.</li>
+              <li>Menjadi penghubung komunikasi resmi pengurus dengan pihak eksternal dan birokrasi kampus.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2: Kadep PSDM HIMASI -->
+        <div class="exp-card-item">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill">Organisasi</span>
+              <span class="exp-time">Sekarang</span>
+              <h3 class="exp-role-title">Kepala Departemen PSDM</h3>
+              <p class="exp-org-name">HIMASI (Himpunan Mahasiswa Sistem Informasi) UTM</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-2" aria-expanded="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body" id="exp-detail-2">
+            <ul class="exp-points-list">
+              <li>Memimpin dan mengarahkan anggota divisi dalam merencanakan program kerja kaderisasi mahasiswa baru.</li>
+              <li>Merancang program workshop pelatihan teknis keilmuan dan seminar pengembangan kapasitas diri pengurus.</li>
+              <li>Menjalankan evaluasi keaktifan dan kinerja fungsionaris organisasi secara berkala.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3: PPK Ormawa Poin Tertinggi -->
+        <div class="exp-card-item exp-card-featured">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill pill-gold">Program Hibah & Prestasi</span>
+              <span class="exp-time">2026</span>
+              <h3 class="exp-role-title">PPK Ormawa 2026 — Skor & Poin Tertinggi Se-Kampus UTM</h3>
+              <p class="exp-org-name">Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa) UTM</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-3" aria-expanded="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron rotate-180" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body is-open" id="exp-detail-3">
+            <ul class="exp-points-list">
+              <li><strong>Judul Program:</strong> <em>SMART SALT FARM : IMPLEMENTASI GEOISOLATOR ADAPTIF IKLIM DIGITAL SEBAGAI MODEL DESA MANDIRI GARAM BERKELANJUTAN DI DESA BUNDER KABUPATEN PAMEKASAN</em>.</li>
+              <li>Berhasil meraih skor penilaian proposal tertinggi se-Universitas Trunojoyo Madura pada tahap seleksi internal kampus.</li>
+              <li>Merancang model inovasi tambak garam adaptif perubahan iklim berbasis integrasi teknologi geoisolator dan sistem monitoring digital untuk peningkatan mutu garam rakyat.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 4: Finalis Lomba Essay Tingkat Nasional FESMA 2026 -->
+        <div class="exp-card-item exp-card-featured">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill pill-gold">Kompetisi Tingkat Nasional</span>
+              <span class="exp-time">2026</span>
+              <h3 class="exp-role-title">Finalis Lomba Essay Tingkat Nasional FESMA 2026 (2 Judul Karya)</h3>
+              <p class="exp-org-name">Sentosa Foundation & BEM Faperta Universitas Mataram (UNRAM)</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-fesma" aria-expanded="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron rotate-180" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body is-open" id="exp-detail-fesma">
+            <ul class="exp-points-list">
+              <li>Dianugerahi predikat <strong>FINALIS</strong> pada Lomba Essay Tingkat Nasional Festival Essay Siswa, Mahasiswa dan Akademisi (FESMA) 2026 di Lombok (SK Kemenkumham: AHU-0033356.AH.01.04. Tahun 2020, No. 044/FESMA/FINALIS/SF-BEM-FAPERTA-UNRAM/IX/2026).</li>
+              <li>Lolos sebagai finalis nasional dengan membawakan 2 judul karya inovasi teknologi sekaligus:
+                <div style="margin-top: 8px; padding-left: 12px; border-left: 2px solid var(--foxglove); display: flex; flex-direction: column; gap: 6px;">
+                  <div><strong>1. FORGUARD:</strong> <em>SISTEM DETEKSI DINI PENEBANGAN ILEGAL BERBASIS SENSOR AKUSTIK DAN GETARAN SEBAGAI UPAYA MITIGASI DEFORESTASI DI KALIMANTAN TENGAH</em></div>
+                  <div><strong>2. SIAGA-TPS:</strong> <em>INTEGRASI PELAPORAN PARTISIPATIF, IOT SEDERHANA, DAN DASBOR RISIKO SEBAGAI SISTEM PERINGATAN DINI KELEBIHAN KAPASITAS SAMPAH DI DEPO TELANG, BANGKALAN</em></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 4: Lomba Business Plan I2AC BEM FEB UTM -->
+        <div class="exp-card-item exp-card-featured">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill pill-gold">Kompetisi Universitas</span>
+              <span class="exp-time">2026</span>
+              <h3 class="exp-role-title">Lomba Business Plan I2AC BEM FEB UTM (Honorable Mention 1)</h3>
+              <p class="exp-org-name">Business Plan I2AC — BEM FEB Universitas Trunojoyo Madura</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-4" aria-expanded="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron rotate-180" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body is-open" id="exp-detail-4">
+            <ul class="exp-points-list">
+              <li>Meraih penghargaan <strong>Honorable Mention 1</strong> pada kompetisi Business Plan I2AC yang diselenggarakan oleh BEM FEB Universitas Trunojoyo Madura 2026.</li>
+              <li>Menganalisis studi kelayakan bisnis, perencanaan arsitektur solusi sistem digital, dan strategi penetrasi pasar.</li>
+              <li>Mempresentasikan gagasan di hadapan dewan juri dengan fokus pada keunggulan inovasi dan efisiensi operasional.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 5: Telkom Akses PKL -->
+        <div class="exp-card-item">
+          <div class="exp-header-row">
+            <div>
+              <span class="exp-category-pill">Praktik Kerja Industri</span>
+              <span class="exp-time">Okt 2023 – Mar 2024</span>
+              <h3 class="exp-role-title">Magang IT & Jaringan (Peserta Terbaik PKL)</h3>
+              <p class="exp-org-name">PT. Telkom Akses</p>
+            </div>
+            <button class="exp-detail-toggle" type="button" data-target="exp-detail-5" aria-expanded="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              <span>Detail Informasi</span>
+              <svg class="toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="exp-collapse-body" id="exp-detail-5">
+            <ul class="exp-points-list">
+              <li>Dianugerahi predikat Peserta Terbaik Praktik Kerja Lapangan (PKL) Jurusan TKJ tahun pelajaran 2023-2024.</li>
+              <li>Melakukan pemeliharaan infrastruktur fiber optik, splicing kabel, serta monitoring kestabilan koneksi perangkat jaringan.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION (Dian's Real Showcase)
+         ========================================== -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: Mie Aigo Kamal (Hak Cipta RI) -->
+        <article class="project-card">
+          <div class="project-mockup-wrapper clickable-mockup" id="haki-mockup-trigger" title="Klik untuk melihat pratinjau sertifikat resmi">
+            <img src="assets/img/project-mie-aigo.jpg?v=3" alt="Antarmuka Web Pemesanan & Kasir UMKM Mie Aigo Kamal" class="project-img" loading="lazy">
+            <div class="project-badge-float">
+              Hak Cipta Kemenkumham RI No. 001059325
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-head">
+              <span class="project-year">2025</span>
+              <span class="project-role-tag">Pencipta Utama & Pengembang Web</span>
+            </div>
+            <h3 class="project-title">Pembuatan Website Untuk Laporan Keuangan (UMKM Mie Aigo Kamal)</h3>
+            <p class="project-desc">
+              Sistem informasi pencatatan kas harian dan pelaporan keuangan digital terintegrasi untuk UMKM kuliner Mie Aigo Kamal (Kamal, Bangkalan). Resmi terdaftar dan memperoleh <strong>Surat Pencatatan Ciptaan (Program Komputer)</strong> di <strong>Kementerian Hukum Republik Indonesia No. 001059325</strong> dengan pemegang hak cipta Universitas Trunojoyo Madura.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">Hak Cipta RI #001059325</span>
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Sistem Akuntansi UMKM</span>
+            </div>
+            <div class="project-links">
+              <button type="button" class="project-link-btn project-link-primary" id="open-haki-modal-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                Lihat Sertifikat Hak Cipta
+              </button>
+              <a href="assets/files/Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf" download="Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Unduh langsung dokumen PDF resmi">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Unduh PDF (3.2 MB)
+              </a>
+              <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Repository GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Cheese Drink POS -->
+        <article class="project-card">
+          <div class="project-mockup-wrapper">
+            <img src="assets/img/project-cheese-drink-dashboard.png" alt="Cheese Drink Point of Sale & Inventory — Dashboard Ringkasan Usaha" class="project-img" loading="lazy">
+            <div class="project-badge-float badge-float-dark">
+              Next.js 16 • Supabase Postgres
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-head">
+              <span class="project-year">2026</span>
+              <span class="project-role-tag">Fullstack Web Developer</span>
+            </div>
+            <h3 class="project-title">Cheese Drink Point of Sale & Inventory</h3>
+            <p class="project-desc">
+              Aplikasi kasir (POS) modern dan manajemen stok bahan baku terotomatisasi. Menghitung transaksi instan dengan variasi topping, memotong stok susu dan sirup saat checkout berhasil, manajemen shift kasir, dan ekspor excel.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">Next.js 16</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">Zustand</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Repository GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SINAU.in -->
+        <article class="project-card">
+          <div class="project-mockup-wrapper mobile-frame-bg">
+            <img src="assets/img/project-sinau-in.jpg" alt="SINAU.in — Platform Informasi & Registrasi Kegiatan Kampus" class="project-img" loading="lazy">
+            <div class="project-badge-float">
+              Mobile App & Event Ecosystem
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-head">
+              <span class="project-year">2026</span>
+              <span class="project-role-tag">Product Designer & Developer</span>
+            </div>
+            <h3 class="project-title">SINAU.in — Hub Informasi & Registrasi Kegiatan Kampus</h3>
+            <p class="project-desc">
+              Platform terpusat yang menghimpun seluruh agenda seminar, workshop, dan pelatihan kampus lintas fakultas/prodi. Mengatasi masalah fragmentasi informasi dengan feed katalog terfilter, sistem pendaftaran instan, e-ticket QR code untuk presensi di lokasi, kalender terintegrasi, fitur submit event resmi bagi ormawa/komunitas (seperti GDGoC Trunojoyo), serta unduh e-sertifikat otomatis.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">Mobile & Web App</span>
+              <span class="tech-pill">Flutter & Dart</span>
+              <span class="tech-pill">QR Code E-Ticket</span>
+              <span class="tech-pill">Event Management</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">UI/UX Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Repository GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: PT CMS Maju Sejahtera Mobile Redesign -->
+        <article class="project-card">
+          <div class="project-mockup-wrapper mobile-frame-bg">
+            <img src="assets/img/project-cms-redesign.png" alt="Redesign Aplikasi Mobile Promotor PT CMS Maju Sejahtera di Figma" class="project-img" loading="lazy">
+            <div class="project-badge-float">
+              Figma • UI/UX Mobile Redesign
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-head">
+              <span class="project-year">2026</span>
+              <span class="project-role-tag">UI/UX Designer</span>
+            </div>
+            <h3 class="project-title">Redesign Aplikasi Mobile Promotor (PT CMS Maju Sejahtera)</h3>
+            <p class="project-desc">
+              Perancangan ulang antarmuka (UI/UX Redesign) aplikasi mobile operasional sales & promotor PT CMS Maju Sejahtera berbasis Figma. Menyederhanakan alur penugasan demo produk harian, memantau pencapaian target sales bulanan dengan indikator visual dinamis, transparansi rincian insentif, serta perbaikan arsitektur informasi untuk mendukung mobilitas kerja promotor di lapangan.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">UI/UX Redesign</span>
+              <span class="tech-pill">Design System</span>
+              <span class="tech-pill">Mobile Application</span>
+              <span class="tech-pill">Wireframing</span>
+              <span class="tech-pill">Prototyping</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Repository GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Laundry Yenny Telang (Web & White/Black Box Testing) -->
+        <article class="project-card">
+          <div class="project-mockup-wrapper mobile-frame-bg">
+            <img src="assets/img/project-laundry-yenny.png" alt="Aplikasi Web Laundry Yenny Telang — Laporan Keuangan & Pengujian Sistem" class="project-img" loading="lazy">
+            <div class="project-badge-float">
+              Web App • White & Black Box Testing
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-head">
+              <span class="project-year">2026</span>
+              <span class="project-role-tag">Fullstack Developer & QA Tester</span>
+            </div>
+            <h3 class="project-title">Aplikasi Web Manajemen Laundry Yenny Telang & Pengujian Sistem</h3>
+            <p class="project-desc">
+              Sistem informasi berbasis web untuk pencatatan transaksi kasir, rekapitulasi omzet berkala, monitoring status cucian, dan pelaporan keuangan operasional Laundry Yenny (Telang, Kamal, Madura). Dilengkapi pengujian perangkat lunak komprehensif menggunakan <strong>White Box Testing</strong> (pengujian alur logika kode & <em>basis path testing</em>) serta <strong>Black Box Testing</strong> (validasi fungsionalitas & kalkulasi transaksi) guna memastikan stabilitas dan akurasi sistem.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">Web Application</span>
+              <span class="tech-pill">PHP & MySQL</span>
+              <span class="tech-pill">White Box Testing</span>
+              <span class="tech-pill">Black Box Testing</span>
+              <span class="tech-pill">Basis Path Testing</span>
+              <span class="tech-pill">Software QA</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Repository GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECH STACK & SOFT SKILLS SECTION
+         ========================================== -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Competencies</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-container-card">
+        <!-- Tech Stack -->
+        <div class="skills-subgroup">
+          <h3 class="skills-group-heading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Tech Stack & Tools
+          </h3>
+          <div class="pills-cluster">
+            <span class="skill-chip">Next.js 16</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript (ES6+)</span>
+            <span class="skill-chip">Flutter & Dart</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Supabase (PostgreSQL)</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">Figma (UI/UX)</span>
+            <span class="skill-chip">White Box & Black Box Testing</span>
+            <span class="skill-chip">Git & GitHub</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-subgroup">
+          <h3 class="skills-group-heading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            Soft Skills
+          </h3>
+          <div class="pills-cluster">
+            <span class="skill-outline-chip">Leadership</span>
+            <span class="skill-outline-chip">Public Speaking</span>
+            <span class="skill-outline-chip">Team Work</span>
+            <span class="skill-outline-chip">Communication</span>
+            <span class="skill-outline-chip">Problem Solving</span>
+            <span class="skill-outline-chip">Manajemen Waktu</span>
+            <span class="skill-outline-chip">Critical Thinking</span>
+            <span class="skill-outline-chip">Strategic Planning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT INFO & FOOTER SECTION
+         ========================================== -->
+    <section class="section section-contact" id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Contact Info</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-card-grid">
+        <a href="https://wa.me/6287717511477" target="_blank" rel="noopener noreferrer" class="contact-box">
+          <div class="contact-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div>
+            <span class="contact-lbl">WhatsApp / Telepon</span>
+            <strong class="contact-val">+62 877-1751-1477</strong>
+          </div>
+        </a>
+
+        <a href="mailto:dianwildanp@gmail.com" class="contact-box">
+          <div class="contact-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <span class="contact-lbl">Email Resmi</span>
+            <strong class="contact-val">dianwildanp@gmail.com</strong>
+          </div>
+        </a>
+
+        <a href="https://github.com/primantaraputra" target="_blank" rel="noopener noreferrer" class="contact-box">
+          <div class="contact-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <div>
+            <span class="contact-lbl">GitHub</span>
+            <strong class="contact-val">github.com/primantaraputra</strong>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/dian-wildan-primantara-putra" target="_blank" rel="noopener noreferrer" class="contact-box">
+          <div class="contact-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <div>
+            <span class="contact-lbl">LinkedIn</span>
+            <strong class="contact-val">Dian Wildan Primantara Putra</strong>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Dian Wildan Primantara Putra</strong>
+        <p>© 2026. Hak Cipta dilindungi undang-undang.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Beranda</a>
+        <a href="#projects">Project</a>
+        <a href="print.html" target="_blank">Portofolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Viewer Hak Cipta Kemenkumham RI -->
+  <div class="modal-backdrop" id="haki-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-haki-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="badge-item badge-accent" style="font-size: 0.72rem; margin-bottom: 4px; display: inline-block;">Kemenkumham RI No. 001059325</span>
+          <h3 class="modal-title" id="modal-haki-title">Surat Pencatatan Ciptaan — UMKM Mie Aigo Kamal</h3>
+          <p class="modal-subtitle">Pemegang Hak Cipta: Universitas Trunojoyo Madura • Pencipta No. 1: Dian Wildan Primantara Putra</p>
+        </div>
+        <button class="modal-close-btn" id="modal-haki-close" aria-label="Tutup Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-cert-preview">
+          <img src="assets/img/haki-mie-aigo.jpg" alt="Surat Pencatatan Ciptaan Kemenkumham RI Lengkap" class="modal-cert-img" loading="lazy">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/files/Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf" download="Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Unduh Dokumen PDF Resmi (3.2 MB)
+        </a>
+        <a href="assets/files/Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          Buka PDF di Tab Baru
+        </a>
+        <button type="button" class="btn btn-ghost" id="modal-haki-close-btn">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Viewer Sertifikat Finalis FESMA 2026 -->
+  <div class="modal-backdrop" id="fesma-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-fesma-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="badge-item badge-accent" style="font-size: 0.72rem; margin-bottom: 4px; display: inline-block;">SK Kemenkumham RI: AHU-0033356.AH.01.04. Tahun 2020</span>
+          <h3 class="modal-title" id="modal-fesma-title">Sertifikat Finalis Lomba Essay Tingkat Nasional FESMA 2026</h3>
+          <p class="modal-subtitle">Sentosa Foundation & BEM Faperta Universitas Mataram (UNRAM) • Diberikan Kepada: Dian Wildan Primantara Putra</p>
+        </div>
+        <button class="modal-close-btn" id="modal-fesma-close" aria-label="Tutup Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-cert-preview">
+          <img src="assets/img/sertifikat-fesma-finalis.png" alt="Sertifikat Finalis Lomba Essay Nasional FESMA 2026" class="modal-cert-img" loading="lazy">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/img/sertifikat-fesma-finalis.png" download="Sertifikat-Finalis-FESMA-2026-DianWildan.png" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Unduh Sertifikat Resolusi Tinggi
+        </a>
+        <a href="assets/img/sertifikat-fesma-finalis.png" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          Buka Gambar di Tab Baru
+        </a>
+        <button type="button" class="btn btn-ghost" id="modal-fesma-close-btn">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Viewer Sertifikat I2AC 2026 -->
+  <div class="modal-backdrop" id="i2ac-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-i2ac-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="badge-item badge-accent" style="font-size: 0.72rem; margin-bottom: 4px; display: inline-block;">Nomor : 003/SRT/B1/KM-UTM/2026</span>
+          <h3 class="modal-title" id="modal-i2ac-title">Sertifikat Honorable Mention 1 — Business Plan I2AC 2026</h3>
+          <p class="modal-subtitle">BEM FEB Universitas Trunojoyo Madura • Diberikan Kepada: Dian Wildan Primantara P</p>
+        </div>
+        <button class="modal-close-btn" id="modal-i2ac-close" aria-label="Tutup Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-cert-preview">
+          <img src="assets/img/sertifikat-i2ac-honorable-mention.png" alt="Sertifikat Honorable Mention 1 I2AC 2026 BEM FEB UTM" class="modal-cert-img" loading="lazy">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/img/sertifikat-i2ac-honorable-mention.png" download="Sertifikat-I2AC-HonorableMention1-DianWildan.png" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Unduh Sertifikat Resolusi Tinggi
+        </a>
+        <a href="assets/img/sertifikat-i2ac-honorable-mention.png" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          Buka Gambar di Tab Baru
+        </a>
+        <button type="button" class="btn btn-ghost" id="modal-i2ac-close-btn">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "build:pdf": "node scripts/make-pdf.js",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "cv"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^24.43.1"
+  }
+}

@@ -1,0 +1,874 @@
+/* ==========================================================================
+   PORTOFOLIO PRESENTATION SLIDE DECK (LANDSCAPE A4 / KEYNOTE STYLE)
+   Desain Editorial Elegan & Lapang: Night Sky (#2a2a35), Foxglove (#b98391), Lily White (#e2e2da)
+   ========================================================================== */
+
+@page {
+  size: 297mm 210mm; /* A4 Landscape Widescreen */
+  margin: 0;
+}
+
+:root {
+  --night-sky: #2a2a35;
+  --night-sky-soft: #383846;
+  --night-sky-deep: #1d1d25;
+  --foxglove: #b98391;
+  --foxglove-dark: #8c5866;
+  --foxglove-light: #f6eef0;
+  --lily-white: #e2e2da;
+  --lily-white-soft: #f4f4ee;
+  
+  --bg-deck: #1c1c24;
+  --slide-bg: #ffffff;
+  --slide-border: #e6e6df;
+  
+  --text-main: #24242e;
+  --text-muted: #5e5e6c;
+  --text-subtle: #7a7a88;
+  
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deck);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ==========================================================================
+   Floating Top Bar (Preview Layar)
+   ========================================================================== */
+.deck-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--night-sky);
+  border-bottom: 1px solid rgba(226, 226, 218, 0.15);
+  padding: 10px 24px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.topbar-badge {
+  background-color: rgba(185, 131, 145, 0.25);
+  color: #f7eff1;
+  border: 1px solid var(--foxglove);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.topbar-btn-ghost {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--lily-white);
+  border-color: rgba(226, 226, 218, 0.2);
+}
+
+.topbar-btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.topbar-btn-foxglove {
+  background-color: var(--foxglove);
+  color: #ffffff;
+  border-color: var(--foxglove);
+}
+
+.topbar-btn-foxglove:hover {
+  background-color: #a5707e;
+  transform: translateY(-1px);
+}
+
+.topbar-btn-white {
+  background-color: #ffffff;
+  color: var(--night-sky);
+  border-color: #ffffff;
+}
+
+.topbar-btn-white:hover {
+  background-color: var(--lily-white-soft);
+}
+
+/* ==========================================================================
+   Slide Deck Container (Preview Layar)
+   ========================================================================== */
+.slide-deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px 80px;
+}
+
+.slide-page {
+  width: 297mm;
+  height: 210mm;
+  min-height: 210mm;
+  max-height: 210mm;
+  background-color: var(--slide-bg);
+  padding: 13mm 18mm 10mm 18mm;
+  border-radius: 6px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Accent bar elegan di atas slide */
+.slide-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--night-sky) 0%, var(--foxglove) 60%, var(--lily-white) 100%);
+}
+
+.slide-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+}
+
+/* ==========================================================================
+   Slide Header (Slide 2, 3, 4)
+   ========================================================================== */
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 9px;
+  border-bottom: 1.5px solid var(--slide-border);
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.header-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.slide-eyebrow {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--foxglove-dark);
+  text-transform: uppercase;
+}
+
+.cert-pill {
+  background-color: var(--foxglove);
+  color: #ffffff;
+  font-size: 6.8pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.tech-tag {
+  background-color: var(--night-sky);
+  color: var(--lily-white);
+  font-size: 6.8pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.slide-title {
+  font-size: 20pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 3px;
+}
+
+.slide-subtitle {
+  font-size: 9pt;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.slide-counter {
+  background-color: var(--lily-white-soft);
+  border: 1px solid var(--slide-border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.current-num {
+  font-size: 14pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  line-height: 1;
+}
+
+.total-num {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SLIDE 1: COVER SLIDE
+   ========================================================================== */
+.slide-cover {
+  padding: 16mm 20mm 12mm 20mm;
+}
+
+.cover-layout {
+  display: grid;
+  grid-template-columns: 1fr 88mm;
+  gap: 24px;
+  align-items: center;
+}
+
+.cover-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.eyebrow-tag {
+  background-color: var(--foxglove);
+  color: #ffffff;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.eyebrow-year {
+  font-size: 8pt;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.cover-name {
+  font-size: 28pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin-bottom: 8px;
+}
+
+.cover-role {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.cover-bio {
+  font-size: 8.8pt;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  max-width: 95%;
+}
+
+.cover-metrics-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric-pill {
+  background-color: var(--lily-white-soft);
+  border-left: 3.5px solid var(--foxglove);
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-val {
+  font-size: 14pt;
+  font-weight: 800;
+  color: var(--night-sky);
+  line-height: 1.1;
+}
+
+.metric-lbl {
+  font-size: 7pt;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.cover-contact-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 7.8pt;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.dot-sep {
+  color: var(--foxglove);
+}
+
+.cover-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-photo-frame {
+  width: 78mm;
+  height: 98mm;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  border: 3px solid var(--foxglove);
+  background-color: var(--lily-white-soft);
+}
+
+.cover-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cover-photo-caption {
+  margin-top: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cover-photo-caption strong {
+  font-size: 8.8pt;
+  color: var(--night-sky);
+}
+
+.cover-photo-caption span {
+  font-size: 7.2pt;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SLIDE 2: BACKGROUND & COMPETENCIES
+   ========================================================================== */
+.overview-two-col {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 24px;
+  height: 100%;
+  align-items: stretch;
+}
+
+.col-section-title {
+  font-size: 8.5pt;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--night-sky);
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid var(--slide-border);
+}
+
+.timeline-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-entry {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--foxglove);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.timeline-body {
+  flex: 1;
+}
+
+.timeline-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.timeline-role {
+  font-size: 8.8pt;
+  font-weight: 700;
+  color: var(--night-sky);
+}
+
+.timeline-tag {
+  font-size: 6.8pt;
+  font-weight: 700;
+  color: var(--foxglove-dark);
+  background-color: var(--foxglove-light);
+  padding: 1.5px 6px;
+  border-radius: 3px;
+}
+
+.timeline-org {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
+.timeline-desc {
+  font-size: 7.6pt;
+  line-height: 1.42;
+  color: var(--text-subtle);
+}
+
+.timeline-cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 7.2pt;
+  font-weight: 700;
+  color: var(--foxglove-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin-top: 3px;
+  padding: 1px 6px;
+  background-color: var(--foxglove-light);
+  border-radius: 3px;
+}
+
+.timeline-cert-link:hover {
+  color: var(--night-sky);
+}
+
+/* Sisi Kanan Slide 2 */
+.overview-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.side-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  background-color: var(--lily-white-soft);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-left: 3px solid var(--foxglove);
+}
+
+.edu-logo-box {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 3px;
+}
+
+.edu-logo-deck {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.edu-school {
+  font-size: 8.2pt;
+  color: var(--night-sky);
+  font-weight: 700;
+  display: block;
+}
+
+.edu-detail {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+  margin-top: 1px;
+}
+
+.edu-sub {
+  font-size: 7pt;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.skill-group {
+  margin-bottom: 7px;
+}
+
+.skill-group-name {
+  font-size: 7.2pt;
+  font-weight: 700;
+  color: var(--night-sky);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.pill {
+  font-size: 7.2pt;
+  font-weight: 600;
+  padding: 3px 8px;
+  background-color: var(--lily-white-soft);
+  color: var(--night-sky);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.pill-accent {
+  background-color: var(--lily-white-soft);
+  border: 1px solid var(--slide-border);
+  color: var(--night-sky);
+}
+
+/* ==========================================================================
+   SLIDE 3 & 4: PROJECT SHOWCASE
+   ========================================================================== */
+.project-slide-grid {
+  display: grid;
+  grid-template-columns: 148mm 1fr;
+  gap: 20px;
+  height: 100%;
+  align-items: stretch;
+}
+
+.project-visual-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.mockup-clean-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--slide-border);
+  background: radial-gradient(ellipse at center, #252438 0%, #12111b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.mockup-clean-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 4px;
+}
+
+.mockup-clean-frame.mockup-mobile-fit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #2e2c45 0%, #151421 100%);
+  padding: 8px 0;
+}
+
+.mockup-clean-frame.mockup-mobile-fit .mockup-clean-img {
+  width: auto;
+  max-width: 85%;
+  height: 94%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.project-meta-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: var(--lily-white-soft);
+  border-radius: 4px;
+  font-size: 7.5pt;
+}
+
+.meta-status strong {
+  color: var(--night-sky);
+}
+
+.meta-link {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--foxglove-dark);
+}
+
+/* Kolom Kanan Project */
+.project-narrative-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.narrative-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.narrative-title {
+  font-size: 7.2pt;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--foxglove-dark);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--slide-border);
+}
+
+.narrative-text {
+  font-size: 8pt;
+  line-height: 1.48;
+  color: var(--text-muted);
+}
+
+.story-points {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 7.6pt;
+  line-height: 1.42;
+  color: var(--text-main);
+}
+
+.point-marker {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--foxglove);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.point-item strong {
+  color: var(--night-sky);
+}
+
+.tech-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 3px;
+}
+
+/* ==========================================================================
+   SLIDE 8, 9, 10: CERTIFICATES & LEGALITY SHOWCASE
+   ========================================================================== */
+.cert-showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.cert-display-frame {
+  width: 100%;
+  height: 124mm;
+  max-height: 124mm;
+  background: radial-gradient(ellipse at center, #252438 0%, #12111b 100%);
+  border: 1px solid var(--slide-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.cert-display-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* ==========================================================================
+   Slide Footer
+   ========================================================================== */
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 7px;
+  border-top: 1px solid var(--slide-border);
+  margin-top: 8px;
+  font-size: 7.2pt;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Aturan Cetak Puppeteer & Browser (@media print)
+   ========================================================================== */
+@media print {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #ffffff !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .slide-deck {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    width: 297mm !important;
+    gap: 0 !important;
+  }
+
+  .slide-page {
+    width: 297mm !important;
+    height: 210mm !important;
+    min-height: 210mm !important;
+    max-height: 210mm !important;
+    margin: 0 !important;
+    padding: 12mm 16mm 9mm 16mm !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .slide-cover {
+    padding: 14mm 18mm 10mm 18mm !important;
+  }
+
+  .slide-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+}
