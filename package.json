@@ -5,6 +5,7 @@
   "main": "js/main.js",
   "type": "module",
   "scripts": {
+    "build": "echo 'Static site ready for deployment'",
     "build:pdf": "node scripts/make-pdf.js",
     "build:pdf:v1": "node scripts/make-pdf.js --v1",
     "serve": "npx serve ."

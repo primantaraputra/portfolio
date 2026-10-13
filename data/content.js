@@ -6,142 +6,151 @@
 export const profile = {
   nickname: "Dian",
   name: "Dian Wildan Primantara Putra",
-  role: "Mahasiswa Sistem Informasi & Web Developer",
-  tagline: "Information Systems Student | Web & Mobile Developer | Tech Enthusiast",
-  location: "Pamekasan, Madura, Jawa Timur",
+  role: "Web Fullstack & Quality Assurance",
+  tagline: "Mahasiswa Sistem Informasi • Web Fullstack & Quality Assurance • Universitas Trunojoyo Madura",
+  location: "Dsn. Mungsapada, Ds. Pademawu Barat, Kec. Pademawu, Kab. Pamekasan",
   phone: "+62 877-1751-1477",
   photo: "assets/img/foto.jpg",
-  headline: "Mahasiswa Sistem Informasi Universitas Trunojoyo Madura dengan fokus pada rekayasa perangkat lunak, sistem informasi berbasis data, dan kepemimpinan organisasi.",
+  headline: "Mahasiswa Sistem Informasi Universitas Trunojoyo Madura (IPK 3,83) yang berfokus pada pengembangan web fullstack dan Quality Assurance. Berpengalaman membangun dan menerapkan sistem digital untuk UMKM (kasir, inventaris, laporan keuangan), dengan satu karya tercatat Hak Cipta Kemenkumham RI. Aktif dalam kepemimpinan organisasi dan kompetisi inovasi tingkat nasional.",
   bio: [
-    "Mahasiswa aktif Sistem Informasi di Universitas Trunojoyo Madura dengan dedikasi pada pengembangan aplikasi web & mobile, rekayasa proses bisnis, serta kepemimpinan organisasi teknologi."
+    "Mahasiswa Sistem Informasi Universitas Trunojoyo Madura (IPK 3,83) yang berfokus pada pengembangan web fullstack dan Quality Assurance. Berpengalaman membangun dan menerapkan sistem digital untuk UMKM (kasir, inventaris, laporan keuangan), dengan satu karya tercatat Hak Cipta Kemenkumham RI. Aktif dalam kepemimpinan organisasi dan kompetisi inovasi tingkat nasional."
   ],
   highlights: [
     {
-      title: "Full-Stack & Mobile Dev",
-      desc: "Berpengalaman membangun aplikasi web dan mobile menggunakan Next.js, Flutter, dan PHP yang berorientasi pada kebutuhan operasional pengguna."
+      title: "Web Fullstack & QA",
+      desc: "Berfokus pada pengembangan web fullstack (Next.js, TypeScript, PHP, MySQL, Supabase) dan penjaminan mutu perangkat lunak (White Box & Black Box Testing)."
     },
     {
       title: "Hak Cipta Kemenkumham RI",
-      desc: "Pencipta bersama Sistem Laporan Keuangan UMKM Mie Aigo Kamal yang resmi tercatat Hak Cipta Program Komputer di Kementerian Hukum RI (No. 001059325)."
+      desc: "Pencipta 1 (dari 10 pencipta, pemegang hak cipta: UTM) untuk Sistem Laporan Keuangan UMKM Mie Aigo Kamal yang resmi tercatat di Kemenkumham RI (No. 001059325)."
     },
     {
       title: "Kompetisi & Prestasi",
-      desc: "Finalis Lomba Essay Tingkat Nasional FESMA 2026 (2 Judul Karya: FORGUARD & SIAGA-TPS), Lolos Seleksi Internal PPK Ormawa 2026 Poin Tertinggi (SMART SALT FARM), serta Honorable Mention 1 Lomba Business Plan I2AC BEM FEB UTM 2026."
+      desc: "Finalis Lomba Essay Tingkat Nasional FESMA 2026 (Merancang 2 Gagasan: FORGUARD & SIAGA-TPS), Penyusun Proposal PPK Ormawa 2026 Poin Tertinggi UTM (SMART SALT FARM), serta Honorable Mention 1 Lomba Business Plan I2AC BEM FEB UTM 2026."
     },
     {
       title: "Proven Leadership",
-      desc: "Aktif memegang posisi strategis sebagai Sekretaris Jenderal AMUNISI UTM dan Kepala Departemen PSDM HIMASI UTM."
+      desc: "Aktif memegang posisi strategis sebagai Sekretaris Jenderal AMUNISI UTM 2026, Kepala Departemen PSDM HIMASI UTM, dan mantan Kepala Divisi AMUNISI 2025."
     }
   ],
   skills: [
     "Next.js 16",
-    "PHP",
     "TypeScript",
     "JavaScript",
+    "PHP",
+    "Tailwind CSS",
+    "Zustand",
     "Flutter & Dart",
-    "Python",
     "MySQL",
     "Supabase (PostgreSQL)",
-    "Tailwind CSS",
+    "REST API",
     "Figma (UI/UX)",
-    "White & Black Box Testing",
+    "White Box Testing (Basis Path)",
+    "Black Box Testing (EP & BVA)",
     "Git & GitHub"
   ],
   softSkills: [
-    "Leadership",
     "Public Speaking",
-    "Team Work",
-    "Communication",
+    "Komunikasi",
+    "Kepemimpinan",
+    "Kerja Sama Tim",
     "Problem Solving",
-    "Manajemen Waktu",
-    "Critical Thinking",
-    "Strategic Planning"
+    "Manajemen Waktu"
   ],
   education: [
     {
       school: "Universitas Trunojoyo Madura",
-      level: "Bachelor's degree (S1)",
-      major: "S1 Sistem Informasi (IPK 3,83 / 4,00)",
-      year: "2024 – Sekarang",
+      level: "Sarjana (S1)",
+      major: "S1 Sistem Informasi (IPK 3.83 / 4.00)",
+      year: "Aug 2024 – Jan 2028 (Perkiraan)",
       icon: "UTM",
-      notes: "Fokus studi pada Rekayasa Perangkat Lunak & Sistem Informasi Terdistribusi."
+      notes: "Fokus studi pada Pengembangan Web Fullstack dan Quality Assurance."
     },
     {
       school: "SMK Negeri 2 Pamekasan",
       level: "Vocational High School",
       major: "Teknik Komputer dan Jaringan",
-      year: "2021 – 2024",
+      year: "Jul 2021 – May 2024",
       icon: "SMK",
       notes: "Siswa Lulusan Terbaik Bidang Akademik angkatan 2021-2024."
     }
   ],
   experience: [
     {
-      year: "Sekarang",
-      role: "Sekretaris Jenderal",
-      institution: "AMUNISI — Universitas Trunojoyo Madura",
+      year: "Feb 2026 – Sekarang",
+      role: "Kepala Departemen PSDM",
+      institution: "Himpunan Mahasiswa Sistem Informasi Universitas Trunodjoyo Madura",
       category: "Organisasi",
       details: [
-        "Memimpin tata kelola administrasi resmi, persuratan kelembagaan, dan pemberkasan organisasi.",
-        "Mengoordinasikan seluruh divisi agar pelaksanaan program kerja berjalan tepat sasaran.",
-        "Menjadi penghubung resmi komunikasi internal pengurus dengan pihak eksternal universitas."
+        "Memimpin dan mengoordinasikan anggota departemen PSDM dalam merencanakan dan menjalankan program kerja.",
+        "Merancang dan melaksanakan program pengembangan diri anggota (pelatihan, workshop, dan kaderisasi).",
+        "Memantau kinerja dan keaktifan pengurus, serta menyusun evaluasi berkala.",
+        "Menjaga keakraban dan kekompakan antaranggota melalui kegiatan internal.",
+        "Menjadi penghubung antara departemen PSDM dengan ketua umum, sekretaris jenderal, dan departemen lain."
       ]
     },
     {
-      year: "Sekarang",
-      role: "Kepala Departemen PSDM",
-      institution: "HIMASI — Universitas Trunojoyo Madura",
+      year: "Feb 2026 – Sekarang",
+      role: "Sekretaris Jenderal",
+      institution: "AMUNISI UTM 2026",
       category: "Organisasi",
       details: [
-        "Memimpin perancangan program kaderisasi mahasiswa baru jurusan Sistem Informasi.",
-        "Menginisiasi pelatihan workshop teknis keilmuan dan forum pengembangan kapasitas anggota.",
-        "Mengawal evaluasi keaktifan dan performa seluruh jajaran pengurus himpunan."
+        "Mengelola administrasi, surat-menyurat, dan pemberkasan organisasi.",
+        "Mengoordinasikan seluruh divisi agar program kerja berjalan sesuai rencana.",
+        "Menjadi penghubung antara pengurus Amunisi, HIMASI, dan pihak eksternal.",
+        "Menyusun notulensi rapat dan laporan kegiatan."
+      ]
+    },
+    {
+      year: "Mar 2025 – Des 2025",
+      role: "Kepala Divisi",
+      institution: "AMUNISI 2025",
+      category: "Organisasi",
+      details: [
+        "Memimpin dan mengoordinasikan seluruh anggota divisi dalam menjalankan program kerja.",
+        "Merencanakan dan mengatur jadwal kegiatan serta pembagian tugas anggota divisi.",
+        "Memantau perkembangan dan keaktifan anggota, serta memberikan arahan dan evaluasi."
       ]
     },
     {
       year: "2026",
-      role: "PPK Ormawa 2026 — Skor & Poin Tertinggi Se-Kampus UTM",
-      institution: "Tim PPK Ormawa Universitas Trunojoyo Madura",
+      role: "PPK Ormawa — Peraih Skor Tertinggi Se-Kampus UTM",
+      institution: "Tim PPK Ormawa Desa Bunder, Kab. Pamekasan",
       category: "Prestasi & Program Hibah",
       details: [
-        "Judul Program: SMART SALT FARM : IMPLEMENTASI GEOISOLATOR ADAPTIF IKLIM DIGITAL SEBAGAI MODEL DESA MANDIRI GARAM BERKELANJUTAN DI DESA BUNDER KABUPATEN PAMEKASAN.",
-        "Meraih perolehan skor dan poin penilaian proposal tertinggi se-Universitas Trunojoyo Madura pada seleksi internal Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa).",
-        "Mengembangkan model desa mandiri garam adaptif perubahan iklim berbasis integrasi teknologi geoisolator dan digitalisasi pemantauan tambak di Desa Bunder, Pamekasan."
+        "Judul: SMART SALT FARM : Implementasi Geoisolator Adaptif Iklim Digital sebagai Model Desa Mandiri Garam Berkelanjutan.",
+        "Penyusun proposal & perancang konsep digitalisasi tambak. Meraih skor tertinggi se-kampus UTM pada seleksi internal hibah Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa)."
       ]
     },
     {
       year: "2026",
-      role: "Finalis Lomba Essay Tingkat Nasional FESMA 2026 (2 Judul)",
-      institution: "Sentosa Foundation & BEM Faperta Universitas Mataram (UNRAM)",
+      role: "Finalis Lomba Essay Nasional FESMA 2026 (2 Inovasi Gagasan)",
+      institution: "Sentosa Foundation & BEM Faperta UNRAM (SK Kemenkumham RI)",
       category: "Kompetisi Nasional",
       certificate: "assets/img/sertifikat-fesma-finalis.png",
       details: [
-        "Dianugerahi predikat FINALIS pada Lomba Essay Tingkat Nasional Festival Essay Siswa, Mahasiswa dan Akademisi (FESMA) 2026 di Lombok (SK Kemenkumham: AHU-0033356.AH.01.04. Tahun 2020).",
-        "Lolos sebagai finalis nasional dengan membawakan 2 judul karya ilmiah & inovasi teknologi sekaligus:",
-        "1) FORGUARD: SISTEM DETEKSI DINI PENEBANGAN ILEGAL BERBASIS SENSOR AKUSTIK DAN GETARAN SEBAGAI UPAYA MITIGASI DEFORESTASI DI KALIMANTAN TENGAH.",
-        "2) SIAGA-TPS: INTEGRASI PELAPORAN PARTISIPATIF, IOT SEDERHANA, DAN DASBOR RISIKO SEBAGAI SISTEM PERINGATAN DINI KELEBIHAN KAPASITAS SAMPAH DI DEPO TELANG, BANGKALAN."
+        "Lolos sebagai Finalis Lomba Essay Tingkat Nasional FESMA 2026 di Lombok dengan merancang 2 inovasi karya gagasan ilmiah:",
+        "1) FORGUARD (Deteksi Penebangan Liar Sensor Akustik/Getaran) — Upaya mitigasi deforestasi di Kalimantan Tengah.",
+        "2) SIAGA-TPS (IoT & Dasbor Risiko Sampah Telang) — Sistem peringatan dini overload sampah di Depo Telang, Bangkalan."
       ]
     },
     {
       year: "2026",
-      role: "Lomba Business Plan I2AC BEM FEB UTM (Honorable Mention 1)",
-      institution: "Business Plan I2AC — BEM FEB Universitas Trunojoyo Madura",
+      role: "Honorable Mention 1, Business Plan I2AC",
+      institution: "Idea Innovation Akselerasi Challenge — BEM FEB UTM",
       category: "Kompetisi",
       certificate: "assets/img/sertifikat-i2ac-honorable-mention.png",
       details: [
-        "Dianugerahi penghargaan Honorable Mention 1 pada kompetisi Business Plan I2AC yang diselenggarakan oleh BEM FEB Universitas Trunojoyo Madura 2026.",
-        "Merancang rancangan model bisnis inovatif, analisa peluang pasar, serta kelayakan operasional berbasis solusi digital terapan.",
-        "Mempresentasikan gagasan di hadapan dewan juri dengan fokus pada value proposition dan strategi keberlanjutan produk."
+        "Dianugerahi penghargaan Honorable Mention 1 pada kompetisi Business Plan I2AC yang diselenggarakan oleh BEM FEB Universitas Trunojoyo Madura 2026."
       ]
     },
     {
       year: "Okt 2023 – Mar 2024",
-      role: "Magang IT / Jaringan (Peserta Terbaik PKL)",
-      institution: "PT. Telkom Akses",
-      category: "Praktik Industri",
+      role: "Magang (Peserta Terbaik PKL)",
+      institution: "PT. Telkom Akses - Kec. Pamekasan, Kab. Pamekasan, Jawa Timur",
+      category: "Pengalaman Magang",
       details: [
-        "Dinobatkan sebagai Peserta Terbaik Praktik Kerja Lapangan (PKL) Jurusan TKJ angkatan 2023-2024.",
-        "Melakukan pemeliharaan infrastruktur fiber optik dan monitoring stabilitas jaringan telekomunikasi."
+        "Peserta Terbaik Praktik Kerja Lapangan (PKL) Jurusan Teknik Komputer dan Jaringan (TKJ) tahun Pelajaran 2023-2024."
       ]
     }
   ],
@@ -156,74 +165,79 @@ export const profile = {
 
 export const projects = [
   {
-    title: "Pembuatan Website Untuk Laporan Keuangan (UMKM Mie Aigo Kamal)",
+    title: "Website Laporan Keuangan UMKM Mie Aigo Kamal",
     year: "2025",
-    tagline: "Surat Pencatatan Ciptaan (Program Komputer) Kemenkumham RI No. 001059325",
-    summary: "Website pencatatan transaksi kas harian dan rekapitulasi laba-rugi digital untuk UMKM Mie Aigo Kamal (Kamal, Bangkalan). Resmi tersertifikasi Hak Cipta Program Komputer di Kementerian Hukum Republik Indonesia No. 001059325 dengan pemegang hak cipta Universitas Trunojoyo Madura.",
-    role: "Pencipta Utama (No. 1) & Pengembang Web",
+    tagline: "Surat Pencatatan Ciptaan (Program Komputer) Kemenkumham RI No. 001059325 • Pemegang: UTM",
+    status: "Implementasi Nyata UMKM & Terdaftar HAKI Kemenkumham",
+    summary: "Merancang dan mengembangkan website laporan keuangan yang diimplementasikan di UMKM kuliner Mie Aigo Kamal (Bangkalan) untuk menggantikan pembukuan kas manual. Sistem mencakup pencatatan kas harian, modul arus kas, kalkulasi margin laba-rugi otomatis, dan rekapitulasi periodik. Tercatat sebagai Program Komputer di Kemenkumham RI (No. 001059325) sebagai Pencipta 1 bersama tim dan dosen pembimbing.",
+    role: "Pencipta 1 (dari 10 pencipta) & Pengembang Web",
     stack: ["PHP", "MySQL", "JavaScript", "HTML5/CSS3", "Hak Cipta RI"],
     image: "assets/img/project-mie-aigo.jpg",
     certificate: "Hak Cipta Kemenkumham RI No. 001059325",
     links: {
       demo: "",
       certificatePdf: "assets/files/Hak-Cipta-UMKM-Mie-Aigo-Kamal.pdf",
-      repo: "https://github.com/primantaraputra"
+      repo: ""
     }
   },
   {
     title: "Cheese Drink Point of Sale & Inventory",
     year: "2026",
-    tagline: "Sistem Kasir Modern & Sinkronisasi Stok Bahan Baku Otomatis",
-    summary: "Aplikasi POS (kasir) cepat dengan kalkulasi pesanan varian topping dinamis, pengurangan stok inventaris susu & sirup otomatis saat checkout, shift kasir, dan pembayaran QRIS.",
+    tagline: "Sistem Kasir Gerai & Pengurangan Stok Bahan Baku Otomatis Terintegrasi Database",
+    status: "Prototipe Fungsional (Proof of Concept - Local Codebase)",
+    summary: "Mengembangkan dan menerapkan aplikasi web kasir (POS) serta manajemen inventaris bahan baku untuk usaha minuman Cheese Drink. Fitur meliputi antarmuka kasir responsif dengan kustomisasi ukuran dan topping, pengurangan stok bahan baku otomatis berbasis resep saat checkout, manajemen shift kasir (rekonsiliasi modal laci, pembayaran tunai/QRIS), dan dasbor pemilik untuk memantau omzet, laba kotor, dan transaksi void.",
     role: "Fullstack Web Developer",
-    stack: ["Next.js 16", "Supabase", "TypeScript", "Tailwind CSS", "Zustand"],
+    stack: ["Next.js 16", "TypeScript", "Supabase", "Tailwind CSS", "Zustand"],
     image: "assets/img/project-cheese-drink-dashboard.png",
     certificate: "",
     links: {
       demo: "",
-      repo: "https://github.com/primantaraputra"
+      repo: ""
     }
   },
   {
-    title: "SINAU.in — Hub Informasi & Registrasi Kegiatan Kampus",
+    title: "SINAU.in, Hub Informasi & Registrasi Kegiatan Kampus",
     year: "2026",
     tagline: "Platform Terpusat Seminar, Workshop & E-Ticketing Mahasiswa Lintas Fakultas",
-    summary: "Platform terpusat yang menghimpun seluruh agenda seminar, workshop, dan pelatihan kampus. Dilengkapi feed katalog kegiatan berfilter topik & penyelenggara, pendaftaran instan dengan e-ticket QR code untuk check-in presensi di lokasi, kalender pribadi, submission event bagi ormawa/komunitas kampus, serta unduh e-sertifikat otomatis.",
+    status: "Prototipe Konsep & MVP Mobile (Product Design)",
+    summary: "Merancang dan mengembangkan platform mobile dan web yang menyatukan informasi seminar, workshop, dan pelatihan lintas fakultas yang sebelumnya tersebar di grup WhatsApp dan media sosial. Fitur meliputi katalog event dengan multi-filter, pendaftaran satu ketukan dengan tiket QR untuk check-in, pengingat H-1, serta alur pengajuan event oleh ormawa dengan verifikasi admin dan e-sertifikat otomatis.",
     role: "Product Designer & Mobile/Web Developer",
-    stack: ["Flutter & Dart", "Next.js", "QR Code Scanner", "Supabase", "UI/UX Design"],
+    stack: ["Flutter", "Next.js", "Supabase", "REST API", "UI/UX Design"],
     image: "assets/img/project-sinau-in.jpg",
     certificate: "",
     links: {
       demo: "",
-      repo: "https://github.com/primantaraputra"
+      repo: ""
     }
   },
   {
-    title: "Redesign Aplikasi Mobile Promotor (PT CMS Maju Sejahtera)",
+    title: "Redesign Aplikasi Mobile Promotor PT CMS Maju Sejahtera",
     year: "2026",
-    tagline: "UI/UX Redesign & Design System Aplikasi Operasional Sales Lapangan di Figma",
-    summary: "Perancangan ulang antarmuka (UI/UX Redesign) aplikasi mobile operasional sales & promotor PT CMS Maju Sejahtera berbasis Figma. Menyederhanakan alur penugasan demo harian, visualisasi progress pencapaian target sales bulanan, transparansi insentif, serta navigasi terstruktur untuk efisiensi kerja tim di lapangan.",
+    tagline: "Studi Kasus UI/UX Redesign & Design System Aplikasi Operasional Sales Lapangan di Figma",
+    status: "Studi Kasus UI/UX & Prototyping (Figma Concept)",
+    summary: "Mendesain ulang UI/UX aplikasi operasional sales lapangan PT CMS Maju Sejahtera di Figma, mencakup wireframing, prototyping, dan design system. Desain berfokus pada pengurangan beban kognitif pengguna lapangan melalui dasbor promotor dengan ringkasan demo harian, visualisasi capaian sales order bulanan, pelacakan estimasi insentif, dan bottom navigation 4 menu yang nyaman dipakai satu tangan.",
     role: "UI/UX Designer",
-    stack: ["Figma", "UI/UX Design", "Mobile App Redesign", "Design System", "Wireframing", "Prototyping"],
+    stack: ["Figma", "UI/UX", "Design System", "Wireframing", "Prototyping"],
     image: "assets/img/project-cms-redesign.png",
     certificate: "",
     links: {
       demo: "",
-      repo: "https://github.com/primantaraputra"
+      repo: ""
     }
   },
   {
-    title: "Aplikasi Web Manajemen Laundry Yenny Telang & Pengujian Sistem",
+    title: "Aplikasi Web Laundry Yenny & Pengujian Sistem",
     year: "2026",
-    tagline: "Sistem Informasi Kasir & Rekapitulasi Keuangan Teruji White Box & Black Box Testing",
-    summary: "Aplikasi web pengelolaan transaksi kasir, laporan operasional harian, dan monitoring pendapatan untuk Laundry Yenny di Telang, Madura. Diperkuat dengan implementasi Software Quality Assurance menggunakan metode White Box Testing (Basis Path & Cyclomatic Complexity) dan Black Box Testing (Equivalence Partitioning & Boundary Value Analysis) untuk menjamin keandalan fungsional dan akurasi kalkulasi keuangan.",
+    tagline: "Sistem Manajemen Kasir & Rekapitulasi Laporan Keuangan Teruji Quality Assurance",
+    status: "Web App & Implementasi QA Testing (Data Demo Pengujian)",
+    summary: "Mengembangkan dan menerapkan sistem web manajemen kasir dan rekapitulasi laporan keuangan untuk Laundry Yenny (Telang, Bangkalan), meliputi dasbor pendapatan harian, pemantauan transaksi masuk, serta pencatatan item diambil dan dibatalkan. Memastikan kualitas sistem melalui White Box Testing (flow graph, basis path, cyclomatic complexity) dan Black Box Testing (Equivalence Partitioning dan Boundary Value Analysis) pada validasi bobot kiloan, tarif layanan, dan total tagihan.",
     role: "Fullstack Web Developer & QA Tester",
-    stack: ["PHP & Web Dev", "MySQL", "White Box Testing", "Black Box Testing", "Basis Path Testing", "Software QA"],
+    stack: ["PHP", "MySQL", "White Box Testing", "Black Box Testing", "Software QA"],
     image: "assets/img/project-laundry-yenny.png",
     certificate: "",
     links: {
       demo: "",
-      repo: "https://github.com/primantaraputra"
+      repo: ""
     }
   }
 ];
