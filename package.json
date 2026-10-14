@@ -5,6 +5,7 @@
   "main": "js/main.js",
   "type": "module",
   "scripts": {
+    "build": "node scripts/build.js",
     "build:pdf": "node scripts/make-pdf.js",
     "build:pdf:v1": "node scripts/make-pdf.js --v1",
     "serve": "npx serve ."
