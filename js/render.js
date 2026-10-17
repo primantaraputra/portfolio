@@ -23,7 +23,7 @@ export function renderPortfolio() {
 
   const portfolioBtn = document.getElementById('hero-portfolio-btn');
   if (portfolioBtn) {
-    portfolioBtn.href = files.portfolio || 'assets/files/Portofolio-DianWildanPrimantaraPutra.pdf';
+    portfolioBtn.href = files.portfolio || 'print.html';
     portfolioBtn.setAttribute('target', '_blank');
     portfolioBtn.setAttribute('rel', 'noopener noreferrer');
   }

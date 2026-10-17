@@ -244,5 +244,5 @@ export const projects = [
 
 export const files = {
   cv: "assets/files/CV-DianWildanPrimantaraPutra.pdf",
-  portfolio: "assets/files/Portofolio-DianWildanPrimantaraPutra.pdf"
+  portfolio: "print.html"
 };

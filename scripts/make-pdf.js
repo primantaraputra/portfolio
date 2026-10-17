@@ -68,7 +68,7 @@ async function generatePDF() {
   // Tentukan path output
   const outputFileName = isV1
     ? 'assets/files/Portofolio-DianWildanPrimantaraPutra-v1-original.pdf'
-    : (files.portfolio || 'assets/files/Portofolio-DianWildanPrimantaraPutra.pdf');
+    : 'assets/files/Portofolio-DianWildanPrimantaraPutra.pdf';
   const outputPath = path.resolve(rootDir, outputFileName);
   const outputDir = path.dirname(outputPath);
   if (!fs.existsSync(outputDir)) {
